@@ -1,18 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] GameObject firstPanel, secondPanel;
+    public void BackBtnFirstPanel()
     {
-        
+        SceneManager.LoadScene(0);
     }
-
-    // Update is called once per frame
-    void Update()
+    public void BackBtnSecondPanel()
     {
-        
+        secondPanel.SetActive(false);
+        firstPanel.SetActive(true);
+    }
+    int selectedField;
+    public void SecondPanelOpen(int category)
+    {
+        selectedField = category;
+        firstPanel.SetActive(false);
+        secondPanel.SetActive(true);
     }
 }

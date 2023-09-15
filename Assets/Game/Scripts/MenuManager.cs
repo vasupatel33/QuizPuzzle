@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class MenuManager : MonoBehaviour
 {
     [SerializeField] private GameObject firstPanel, SettingPanel, AboutPanel;
+    [SerializeField] Animator settingPanelAnim;
     [SerializeField] Button MusicBtn, SoundBtn;
     [SerializeField] Sprite MusicOnImg, SoundOnImg,MusicOffImg,SoundOffImg;
 
@@ -16,6 +17,12 @@ public class MenuManager : MonoBehaviour
     }
     public void SettingBtnClicked()
     {
+        settingPanelAnim.Play("SettingPanel");
+        StartCoroutine(SettingPanelWait());
+    }
+    IEnumerator SettingPanelWait()
+    {
+        yield return new WaitForSeconds(1f);
         SettingPanel.SetActive(true);
     }
     public void BackbtnSettingPanel()
