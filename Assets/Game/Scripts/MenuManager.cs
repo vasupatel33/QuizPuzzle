@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class MenuManager : MonoBehaviour
 {
     [SerializeField] private GameObject firstPanel, SettingPanel, AboutPanel;
-    [SerializeField] Animator settingPanelAnim;
+    [SerializeField] Animator settingPanelAnim, AboutPanelAnim;
     [SerializeField] Button MusicBtn, SoundBtn;
     [SerializeField] Sprite MusicOnImg, SoundOnImg,MusicOffImg,SoundOffImg;
 
@@ -17,26 +17,34 @@ public class MenuManager : MonoBehaviour
     }
     public void SettingBtnClicked()
     {
+        SettingPanel.SetActive(true);
         settingPanelAnim.Play("SettingPanel");
+    }
+    
+    public void BackbtnSettingPanel()
+    {
+        settingPanelAnim.Play("SettingPanelClose");
         StartCoroutine(SettingPanelWait());
     }
     IEnumerator SettingPanelWait()
     {
-        yield return new WaitForSeconds(1f);
-        SettingPanel.SetActive(true);
-    }
-    public void BackbtnSettingPanel()
-    {
+        yield return new WaitForSeconds(0.45f);
         SettingPanel.SetActive(false);
     }
     public void AboutPanelOpen()
     {
         AboutPanel.SetActive(true);
+        AboutPanelAnim.Play("settingPanelAnim");
     }
     public void BackbtnAboutPanel()
     {
+        AboutPanelAnim.Play("AboutPanelClose");
+        StartCoroutine(AboutPanelWait());
+    }
+    IEnumerator AboutPanelWait()
+    {
+        yield return new WaitForSeconds(0.45f);
         AboutPanel.SetActive(false);
-        SettingPanel.SetActive(false);
     }
 
     public void QuitGame()
