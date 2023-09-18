@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Button MusicBtn, SoundBtn;
     [SerializeField] Sprite MusicOnImg, SoundOnImg, MusicOffImg, SoundOffImg;
     [SerializeField] Student[] s;
+    [SerializeField] AudioClip ClickSound, CorrectAnsSound, GameOverSound;
 
     private void Start()
     {

@@ -2326,8 +2326,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b22484a133dfea447add6eb5e7049a1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isSoundPlaying: 1
   isMusicPlaying: 1
+  isSoundPlaying: 1
 --- !u!1 &1136265262
 GameObject:
   m_ObjectHideFlags: 0
@@ -2594,8 +2594,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Read the Question and Find the true answer for that Question and your Answer
-    is true, You Will go to the New Question
+  m_text: Read the Question and Find the <style="H1">true</style> answer for that
+    Question and your <style="H2"> Answer</style> is true, You Will go to the New
+    Question
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3711,6 +3712,7 @@ MonoBehaviour:
   SoundOnImg: {fileID: 21300000, guid: b00706694749c9a4c982fa8a7bbe5d87, type: 3}
   MusicOffImg: {fileID: 21300000, guid: ff4b862e2dbbe8641874bccc0e717644, type: 3}
   SoundOffImg: {fileID: 21300000, guid: 10efa71473beb9f4dbb9c0d97c8ad360, type: 3}
+  ClickSound: {fileID: 8300000, guid: 7be1896f311862047a0036ebfb6b6f8d, type: 3}
 --- !u!1 &1751680505
 GameObject:
   m_ObjectHideFlags: 0

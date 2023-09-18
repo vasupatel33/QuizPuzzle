@@ -10,7 +10,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] Animator settingPanelAnim, AboutPanelAnim;
     [SerializeField] Button MusicBtn, SoundBtn;
     [SerializeField] Sprite MusicOnImg, SoundOnImg,MusicOffImg,SoundOffImg;
-
+    [SerializeField] AudioClip ClickSound;
     private void Start()
     {
         MusicSet();
@@ -18,16 +18,19 @@ public class MenuManager : MonoBehaviour
     }
     public void PlayBtnClicked()
     {
+        Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
         SceneManager.LoadScene(1);
     }
     public void SettingBtnClicked()
     {
+        Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
         SettingPanel.SetActive(true);
         settingPanelAnim.Play("SettingPanel");
     }
     
     public void BackbtnSettingPanel()
     {
+        Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
         settingPanelAnim.Play("SettingPanelClose");
         StartCoroutine(SettingPanelWait());
     }
@@ -38,11 +41,13 @@ public class MenuManager : MonoBehaviour
     }
     public void AboutPanelOpen()
     {
+        Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
         AboutPanel.SetActive(true);
         AboutPanelAnim.Play("settingPanelAnim");
     }
     public void BackbtnAboutPanel()
     {
+        Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
         AboutPanelAnim.Play("AboutPanelClose");
         StartCoroutine(AboutPanelWait());
     }
@@ -54,6 +59,7 @@ public class MenuManager : MonoBehaviour
 
     public void QuitGame()
     {
+        Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
         Application.Quit();
     }
     public void MusicManager()
@@ -87,6 +93,7 @@ public class MenuManager : MonoBehaviour
     }
     public void SoundManager()
     {
+        Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
         if (Common.Instance.isSoundPlaying == false)
         {
             Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().mute = false;
