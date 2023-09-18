@@ -11,6 +11,11 @@ public class MenuManager : MonoBehaviour
     [SerializeField] Button MusicBtn, SoundBtn;
     [SerializeField] Sprite MusicOnImg, SoundOnImg,MusicOffImg,SoundOffImg;
 
+    private void Start()
+    {
+        MusicSet();
+        SoundSet();
+    }
     public void PlayBtnClicked()
     {
         SceneManager.LoadScene(1);
@@ -28,7 +33,7 @@ public class MenuManager : MonoBehaviour
     }
     IEnumerator SettingPanelWait()
     {
-        yield return new WaitForSeconds(0.45f);
+        yield return new WaitForSeconds(0.5f);
         SettingPanel.SetActive(false);
     }
     public void AboutPanelOpen()
@@ -43,7 +48,7 @@ public class MenuManager : MonoBehaviour
     }
     IEnumerator AboutPanelWait()
     {
-        yield return new WaitForSeconds(0.45f);
+        yield return new WaitForSeconds(0.5f);
         AboutPanel.SetActive(false);
     }
 
@@ -95,7 +100,7 @@ public class MenuManager : MonoBehaviour
             Common.Instance.isSoundPlaying = false;
         }
     }
-    public void SoudnSet()
+    public void SoundSet()
     {
         if (Common.Instance.isSoundPlaying == false)
         {

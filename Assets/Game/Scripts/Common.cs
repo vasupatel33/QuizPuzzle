@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Common : MonoBehaviour
 {
-    public bool isSoundPlaying, isMusicPlaying;
+    public bool isMusicPlaying, isSoundPlaying;
     public static Common Instance;
 
     private void Awake()
