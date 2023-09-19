@@ -11,9 +11,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Animator settingPanelAnim;
     [SerializeField] Button MusicBtn, SoundBtn;
     [SerializeField] Sprite MusicOnImg, SoundOnImg, MusicOffImg, SoundOffImg;
-    [SerializeField] Student[] s;
     [SerializeField] AudioClip ClickSound, CorrectAnsSound, GameOverSound;
-
+    [SerializeField] Category[] AllCat;
     private void Start()
     {
         MusicSet();
@@ -124,10 +123,3 @@ public class GameManager : MonoBehaviour
         }
     }
 }
-[System.Serializable]
-public struct Student
-{
-    public string Question;
-    public string[] Option;
-    public string Answer;
-};
