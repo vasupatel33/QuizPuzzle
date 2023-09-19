@@ -2376,7 +2376,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.5002966, g: 0.5849056, b: 0.581679, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -4347,6 +4347,116 @@ MonoBehaviour:
   CorrectAnsSound: {fileID: 0}
   GameOverSound: {fileID: 0}
   AllCat:
+  - CatName: Economics
+    AllQuestion:
+    - QuestionName: 'Which city has been called the financial capital of India? '
+      AllOption:
+      - OptionsName: Mumbai
+      - OptionsName: Delhi
+      - OptionsName: Patna
+      - OptionsName: Bangalore
+      Answer: Mumbai
+    - QuestionName: In which year were the Regional Rural Banks established?
+      AllOption:
+      - OptionsName: 1985
+      - OptionsName: 1975
+      - OptionsName: 1990
+      - OptionsName: 2011
+      Answer: 1975
+    - QuestionName: 'Whose Arthashastra was composed? '
+      AllOption:
+      - OptionsName: Chandragupta
+      - OptionsName: Maurya Alexander
+      - OptionsName: Chanakya
+      - OptionsName: None of these
+      Answer: Chanakya
+    - QuestionName: 'Which metal is most used as currency? '
+      AllOption:
+      - OptionsName: Iron
+      - OptionsName: Copper
+      - OptionsName: Brass
+      - OptionsName: Silver and Gold
+      Answer: Silver and Gold
+    - QuestionName: 'Production and income calculation method is from economic point
+        of view? '
+      AllOption:
+      - OptionsName: Sahaj
+      - OptionsName: Scientist
+      - OptionsName: practical
+      - OptionsName: all three
+      Answer: all three
+    - QuestionName: 'What is the name of the currency of Bangladesh? '
+      AllOption:
+      - OptionsName: Rupee
+      - OptionsName: Dollar
+      - OptionsName: Taka
+      - OptionsName: Dinar
+      Answer: Taka
+    - QuestionName: 'Which of the following is the oldest stock market in Asia? '
+      AllOption:
+      - OptionsName: Patna
+      - OptionsName: Delhi
+      - OptionsName: Kanpur
+      - OptionsName: Mumbai
+      Answer: Mumbai
+    - QuestionName: 'The National Rural Employment Guarantee Scheme is named after
+        which great man? '
+      AllOption:
+      - OptionsName: Rajiv Gandhi
+      - OptionsName: Mahatma Gandhi
+      - OptionsName: Indira Gandhi
+      - OptionsName: Jawaharlal Nehru
+      Answer: Mahatma Gandhi
+    - QuestionName: Which of the following Indian states is a victim of poverty?
+      AllOption:
+      - OptionsName: Bihar
+      - OptionsName: Kerala
+      - OptionsName: Karnataka
+      - OptionsName: Haryana
+      Answer: Bihar
+    - QuestionName: 'In which the following is not directly controlled by RBI? '
+      AllOption:
+      - OptionsName: Bank rate
+      - OptionsName: Repo rate
+      - OptionsName: Base rate
+      - OptionsName: Cash Reserve Ratio
+      Answer: Base rate
+    - QuestionName: 'Which of the following is the central bank of the Government
+        of India? '
+      AllOption:
+      - OptionsName: Cooperative Bank
+      - OptionsName: Reserve Bank of India
+      - OptionsName: Central Bank of India
+      - OptionsName: State Bank of India
+      Answer: Reserve Bank of India
+    - QuestionName: 'When was the Human Rights Commission established?  '
+      AllOption:
+      - OptionsName: 1993
+      - OptionsName: 1994
+      - OptionsName: 1995
+      - OptionsName: 2005
+      Answer: 1993
+    - QuestionName: 'Which of the following guarantees the purity of food items? '
+      AllOption:
+      - OptionsName: Hallmark
+      - OptionsName: Agmark
+      - OptionsName: Bullmark
+      - OptionsName: ISI mark
+      Answer: Agmark
+    - QuestionName: 'Where is the national center of organic Fertilizer production? '
+      AllOption:
+      - OptionsName: Hyderabad
+      - OptionsName: Ghaziabad
+      - OptionsName: Nellore
+      - OptionsName: Dehradun
+      Answer: Ghaziabad
+    - QuestionName: 'Which of the following are not functions of currency? '
+      AllOption:
+      - OptionsName: Medium
+      - OptionsName: Measurement
+      - OptionsName: Payment
+      - OptionsName: Writing and editing
+      Answer: Writing and editing
   - CatName: Science
     AllQuestion:
     - QuestionName: 'Which one of these blood types is the rarest? '
@@ -4363,13 +4473,13 @@ MonoBehaviour:
       - OptionsName: Speed
       - OptionsName: Time
       Answer: Distance
-    - QuestionName: 'How many bones are there in the adult human body? '
+    - QuestionName: Which is the most abundant gas in the earth's atmosphere?
       AllOption:
-      - OptionsName: 106
-      - OptionsName: 156
-      - OptionsName: 206
-      - OptionsName: 256
-      Answer: 206
+      - OptionsName: Nitrogen
+      - OptionsName: Hydrogen
+      - OptionsName: Carbon-di-oxide
+      - OptionsName: Helium
+      Answer: Nitrogen
     - QuestionName: 'In which food will you find the most vitamin C? '
       AllOption:
       - OptionsName: Meat
@@ -4419,13 +4529,13 @@ MonoBehaviour:
       - OptionsName: Blue whale
       - OptionsName: Giraffe
       Answer: Blue whale
-    - QuestionName: 'Which is the strongest sense in a dog?  '
+    - QuestionName: 'Who invented periodic table? '
       AllOption:
-      - OptionsName: Touch
-      - OptionsName: Hearing
-      - OptionsName: Smell
-      - OptionsName: Taste
-      Answer: Smell
+      - OptionsName: Dmitri Mendeleev
+      - OptionsName: David Joseph
+      - OptionsName: Rinky Martin
+      - OptionsName: Newton
+      Answer: Dmitri Mendeleev
     - QuestionName: Rate Our Game by Star by Your Experience.
       AllOption:
       - OptionsName: 2 Star
@@ -4447,19 +4557,177 @@ MonoBehaviour:
       - OptionsName: Nitrogen
       - OptionsName: Hydrogen
       Answer: Hydrogen
-    - QuestionName: 'Which is the largest animal on earth?  '
+    - QuestionName: 'With which polymer, the cabinets of radio and TV made of? '
       AllOption:
-      - OptionsName: Shark
-      - OptionsName: Elephant
-      - OptionsName: Blue whale
-      - OptionsName: Giraffe
-      Answer: Blue whale
-  - CatName: Economics
-    AllQuestion: []
+      - OptionsName: Polystyrene
+      - OptionsName: Polythene
+      - OptionsName: Nylon
+      - OptionsName: Teri cot
+      Answer: Polystyrene
   - CatName: Maths
-    AllQuestion: []
+    AllQuestion:
+    - QuestionName: What is the value of Pi ?
+      AllOption:
+      - OptionsName: 2.14
+      - OptionsName: 3.24
+      - OptionsName: 6.35
+      - OptionsName: 3.14
+      Answer: 3.14
+    - QuestionName: 'If we minus 712 from 1500, how much do we get?  '
+      AllOption:
+      - OptionsName: 788
+      - OptionsName: 778
+      - OptionsName: 768
+      - OptionsName: 758
+      Answer: 788
+    - QuestionName: "Solve 40\xF78+2."
+      AllOption:
+      - OptionsName: 5
+      - OptionsName: 7
+      - OptionsName: 6
+      - OptionsName: 4
+      Answer: 7
+    - QuestionName: "What is the sum of 90 \u2013 79? "
+      AllOption:
+      - OptionsName: 15
+      - OptionsName: 1
+      - OptionsName: 21
+      - OptionsName: 11
+      Answer: 11
+    - QuestionName: "What is the sum of (9\xD72) \u2013 10? "
+      AllOption:
+      - OptionsName: 28
+      - OptionsName: 8
+      - OptionsName: 18
+      - OptionsName: 5
+      Answer: 8
+    - QuestionName: 'The number of milliliters in 1 liter is '
+      AllOption:
+      - OptionsName: 10,000
+      - OptionsName: 100
+      - OptionsName: 1000
+      - OptionsName: None Of The Above
+      Answer: 1000
+    - QuestionName: 'What is the next prime number after 5?  '
+      AllOption:
+      - OptionsName: 11
+      - OptionsName: 6
+      - OptionsName: 9
+      - OptionsName: 7
+      Answer: 7
+    - QuestionName: 'Which prime number is closest to 100? '
+      AllOption:
+      - OptionsName: 97
+      - OptionsName: 101
+      - OptionsName: 99
+      - OptionsName: 103
+      Answer: 101
+    - QuestionName: 'How many faces does a cube have? '
+      AllOption:
+      - OptionsName: 6
+      - OptionsName: 8
+      - OptionsName: 2
+      - OptionsName: 4
+      Answer: 6
+    - QuestionName: 'If the time is 2:53pm, how many minutes is it until 4:17pm? '
+      AllOption:
+      - OptionsName: 85 Miniutes
+      - OptionsName: 80 Miniutes
+      - OptionsName: 60 Minutes
+      - OptionsName: 84 Miniutes
+      Answer: 84 Miniutes
+    - QuestionName: 'What is the square root of 1? '
+      AllOption:
+      - OptionsName: 0
+      - OptionsName: 1
+      - OptionsName: 2
+      - OptionsName: None Of the Above
+      Answer: 1
+    - QuestionName: 'What is half of one half? '
+      AllOption:
+      - OptionsName: 0.50
+      - OptionsName: 1.25
+      - OptionsName: 1
+      - OptionsName: 0.25
+      Answer: 0.25
+    - QuestionName: 'Turn 4/12 into a percentage  '
+      AllOption:
+      - OptionsName: 50%
+      - OptionsName: 25%
+      - OptionsName: 33%
+      - OptionsName: 75%
+      Answer: 33%
+    - QuestionName: 'How much is 1% of 1?  '
+      AllOption:
+      - OptionsName: 0.01
+      - OptionsName: 1
+      - OptionsName: 0.5
+      - OptionsName: 100
+      Answer: 0.01
+    - QuestionName: If I pay $2.14 for a bag of rice and then sell it on for $3,
+        how much profit have I made?
+      AllOption:
+      - OptionsName: $0.34
+      - OptionsName: $0.76
+      - OptionsName: $5.14
+      - OptionsName: None Of The Above
+      Answer: None Of The Above
   - CatName: Politics
-    AllQuestion: []
+    AllQuestion:
+    - QuestionName: How many times national emergency has been imposed in India after
+        independence?
+      AllOption:
+      - OptionsName: Once
+      - OptionsName: Twice
+      - OptionsName: Thrice
+      - OptionsName: Four Times
+      Answer: Thrice
+    - QuestionName: What is duration of Post of Prime Minister?
+      AllOption:
+      - OptionsName: 5 Years
+      - OptionsName: 10 Years
+      - OptionsName: 4 Years
+      - OptionsName: 7 Years
+      Answer: 
+    - QuestionName: 
+      AllOption: []
+      Answer: 
+    - QuestionName: 
+      AllOption: []
+      Answer: 
+    - QuestionName: 
+      AllOption: []
+      Answer: 
+    - QuestionName: 
+      AllOption: []
+      Answer: 
+    - QuestionName: 
+      AllOption: []
+      Answer: 
+    - QuestionName: 
+      AllOption: []
+      Answer: 
+    - QuestionName: 
+      AllOption: []
+      Answer: 
+    - QuestionName: 
+      AllOption: []
+      Answer: 
+    - QuestionName: 
+      AllOption: []
+      Answer: 
+    - QuestionName: 
+      AllOption: []
+      Answer: 
+    - QuestionName: 
+      AllOption: []
+      Answer: 
+    - QuestionName: 
+      AllOption: []
+      Answer: 
+    - QuestionName: 
+      AllOption: []
+      Answer: 
   - CatName: Technology
     AllQuestion: []
   - CatName: Indian Culture
@@ -5132,8 +5400,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 601574960}
-  - {fileID: 195955507}
   - {fileID: 697122821}
+  - {fileID: 195955507}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

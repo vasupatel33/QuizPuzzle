@@ -17,6 +17,20 @@ public class GameManager : MonoBehaviour
     {
         MusicSet();
         SoundSet();
+        for(int i = 0; i < AllCat.Length; i++)
+        {
+            Debug.Log(AllCat[i].CatName);
+            for(int j = 0; j < AllCat[i].AllQuestion.Length; j++)
+            {
+                Debug.Log(AllCat[i].AllQuestion[j].QuestionName);
+                Debug.Log(AllCat[i].AllQuestion[j].Answer);
+                for(int k = 0; k < AllCat[i].AllQuestion[j].AllOption.Length; k++)
+                {
+                    Debug.Log(AllCat[i].AllQuestion[j].AllOption[k].OptionsName);
+                }
+            }
+
+        }
     }
     public void HomeBtnSettingPanel()
     {
