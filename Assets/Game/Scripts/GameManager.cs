@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using TMPro.Examples;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -13,23 +15,58 @@ public class GameManager : MonoBehaviour
     [SerializeField] Sprite MusicOnImg, SoundOnImg, MusicOffImg, SoundOffImg;
     [SerializeField] AudioClip ClickSound, CorrectAnsSound, GameOverSound;
     [SerializeField] Category[] AllCat;
+    [SerializeField] TextMeshProUGUI QuestionTxt;
+    [SerializeField] TextMeshProUGUI[] AllOptText;
+
+    int questionNo;
+    
     private void Start()
     {
         MusicSet();
         SoundSet();
-        for(int i = 0; i < AllCat.Length; i++)
-        {
-            Debug.Log(AllCat[i].CatName);
-            for(int j = 0; j < AllCat[i].AllQuestion.Length; j++)
-            {
-                Debug.Log(AllCat[i].AllQuestion[j].QuestionName);
-                Debug.Log(AllCat[i].AllQuestion[j].Answer);
-                for(int k = 0; k < AllCat[i].AllQuestion[j].AllOption.Length; k++)
-                {
-                    Debug.Log(AllCat[i].AllQuestion[j].AllOption[k].OptionsName);
-                }
-            }
+        //for(int i = 0; i < AllCat.Length; i++)
+        //{
+        //    Debug.Log(AllCat[i].CatName);
+        //    for(int j = 0; j < AllCat[i].AllQuestion.Length; j++)
+        //    {
+        //        Debug.Log(AllCat[i].AllQuestion[j].QuestionName);
+        //        Debug.Log(AllCat[i].AllQuestion[j].Answer);
+        //        for(int k = 0; k < AllCat[i].AllQuestion[j].AllOption.Length; k++)
+        //        {
+        //            Debug.Log(AllCat[i].AllQuestion[j].AllOption[k].OptionsName);
+        //        }
+        //    }
 
+        //}
+    }
+    public void QuestionSet()
+    {
+        for (int j = 0; j < AllCat[selectedField].AllQuestion.Length; j++)
+        {
+            QuestionTxt.text = AllCat[selectedField].AllQuestion[questionNo].QuestionName;
+
+            Debug.Log(AllCat[selectedField].AllQuestion[questionNo].QuestionName);
+            Debug.Log(AllCat[selectedField].AllQuestion[questionNo].Answer);
+
+            for (int k = 0; k < AllCat[selectedField].AllQuestion[questionNo].AllOption.Length; k++)
+            {
+                
+                AllOptText[k].text = AllCat[selectedField].AllQuestion[questionNo].AllOption[k].OptionsName;
+                Debug.Log(AllCat[selectedField].AllQuestion[selectedField].AllOption[k].OptionsName);
+            }
+        }
+    }
+    public void CheckAnswer(TextMeshProUGUI OptText)
+    {
+        string ans = AllCat[selectedField].AllQuestion[questionNo].Answer;
+        if (OptText.text == ans)
+        {
+            questionNo++;
+            QuestionSet();
+        }
+        else
+        {
+            Debug.Log("Answer is wrong");
         }
     }
     public void HomeBtnSettingPanel()
@@ -62,6 +99,7 @@ public class GameManager : MonoBehaviour
         selectedField = category;
         BlackRoundAnim.SetTrigger("Start");
         StartCoroutine(SecondPanelWait());
+        QuestionSet();
     }
     IEnumerator SecondPanelWait()
     {
