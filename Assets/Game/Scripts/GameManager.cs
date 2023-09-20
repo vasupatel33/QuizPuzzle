@@ -17,9 +17,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] Category[] AllCat;
     [SerializeField] TextMeshProUGUI QuestionTxt;
     [SerializeField] TextMeshProUGUI[] AllOptText;
+    [SerializeField] TextMeshProUGUI CatHeadingText;
+    [SerializeField] TextMeshProUGUI ScoreText;
 
     int questionNo;
-    
+    int ScoreValue=1;
     private void Start()
     {
         MusicSet();
@@ -61,6 +63,8 @@ public class GameManager : MonoBehaviour
         string ans = AllCat[selectedField].AllQuestion[questionNo].Answer;
         if (OptText.text == ans)
         {
+            ScoreText.text = ScoreValue.ToString();
+            ScoreValue++;
             questionNo++;
             QuestionSet();
         }
@@ -99,6 +103,7 @@ public class GameManager : MonoBehaviour
         selectedField = category;
         BlackRoundAnim.SetTrigger("Start");
         StartCoroutine(SecondPanelWait());
+        CatHeadingText.text = AllCat[selectedField].CatName;
         QuestionSet();
     }
     IEnumerator SecondPanelWait()
