@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] GameObject firstPanel, secondPanel, settingPanel;
+    [SerializeField] GameObject firstPanel, secondPanel, settingPanel, gameOverPanel;
     [SerializeField] private Animator BlackRoundAnim;
     [SerializeField] private Animator settingPanelAnim;
     [SerializeField] Button MusicBtn, SoundBtn;
@@ -19,7 +19,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI[] AllOptText;
     [SerializeField] TextMeshProUGUI CatHeadingText;
     [SerializeField] TextMeshProUGUI ScoreText;
-
+    [SerializeField] Image SliderImage;
+    
+    bool isSlider;
     int questionNo;
     int ScoreValue=1;
     private void Start()
@@ -40,6 +42,20 @@ public class GameManager : MonoBehaviour
         //    }
 
         //}
+    }
+    private void Update()
+    {
+        if(isSlider)
+        {
+            if(SliderImage.fillAmount < 1)
+            {
+                SliderImage.fillAmount += 0.2f * Time.deltaTime;
+            }
+            else
+            {
+                gameOverPanel.SetActive(true);
+            }
+        }
     }
     public void QuestionSet()
     {
@@ -109,7 +125,8 @@ public class GameManager : MonoBehaviour
     IEnumerator SecondPanelWait()
     {
         yield return new WaitForSeconds(1f);
-        if(firstPanel.activeInHierarchy)
+        isSlider = true;
+        if (firstPanel.activeInHierarchy)
         {
             secondPanel.SetActive(true);
             firstPanel.SetActive(false);
