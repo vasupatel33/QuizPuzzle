@@ -1,0 +1,12 @@
+1 = Put all category button off
+
+2= True first button's Interactive so next will unlock
+
+3= When Btn click unlock next level and be sure next level unlock only when its previous btn clicked 
+
+0  1	
+1  2
+2  3
+3  4
+4  5
+5  6
