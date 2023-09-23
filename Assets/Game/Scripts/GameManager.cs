@@ -13,19 +13,21 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Animator settingPanelAnim;
     [SerializeField] Button MusicBtn, SoundBtn;
     [SerializeField] Sprite MusicOnImg, SoundOnImg, MusicOffImg, SoundOffImg;
+    //[SerializeField] Image SliderImage;
+    [SerializeField] private Animator QuestionAnim;
     [SerializeField] AudioClip ClickSound, CorrectAnsSound, GameOverSound;
     [SerializeField] Category[] AllCat;
     [SerializeField] TextMeshProUGUI QuestionTxt;
     [SerializeField] TextMeshProUGUI[] AllOptText;
     [SerializeField] TextMeshProUGUI CatHeadingText;
     [SerializeField] TextMeshProUGUI ScoreText;
-    [SerializeField] Image SliderImage;
     
     bool isSlider;
     int questionNo;
     int ScoreValue=1;
     private void Start()
     {
+
         MusicSet();
         SoundSet();
         //for(int i = 0; i < AllCat.Length; i++)
@@ -45,17 +47,17 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        if(isSlider)
-        {
-            if(SliderImage.fillAmount < 1)
-            {
-                SliderImage.fillAmount += 0.2f * Time.deltaTime;
-            }
-            else
-            {
-                gameOverPanel.SetActive(true);
-            }
-        }
+        //if(isSlider)
+        //{
+        //    if(SliderImage.fillAmount < 1)
+        //    {
+        //        SliderImage.fillAmount += 0.2f * Time.deltaTime;
+        //    }
+        //    else
+        //    {
+        //        gameOverPanel.SetActive(true);
+        //    }
+        //}
     }
     public void QuestionSet()
     {
@@ -77,8 +79,13 @@ public class GameManager : MonoBehaviour
     public void CheckAnswer(TextMeshProUGUI OptText)
     {
         string ans = AllCat[selectedField].AllQuestion[questionNo].Answer;
+        OptText.text = OptText.text.Replace(" ", "");
+        ans = ans.Replace(" ", "");
         if (OptText.text == ans)
         {
+            QuestionAnim.SetTrigger("QuestionTrigger");
+            Debug.Log("Option text = "+OptText.text);
+            Debug.Log("Answer text = "+ans);
             ScoreText.text = ScoreValue.ToString();
             ScoreValue++;
             questionNo++;
@@ -125,6 +132,7 @@ public class GameManager : MonoBehaviour
     IEnumerator SecondPanelWait()
     {
         yield return new WaitForSeconds(1f);
+        QuestionAnim.SetTrigger("QuestionTrigger");
         isSlider = true;
         if (firstPanel.activeInHierarchy)
         {
