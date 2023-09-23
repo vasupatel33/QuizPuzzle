@@ -8,12 +8,12 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] GameObject firstPanel, secondPanel, settingPanel, gameOverPanel;
+    [SerializeField] GameObject firstPanel, secondPanel, settingPanel, gameOverPanel, BackgroundClickRemoveImage;
     [SerializeField] private Animator BlackRoundAnim;
     [SerializeField] private Animator settingPanelAnim;
     [SerializeField] Button MusicBtn, SoundBtn;
     [SerializeField] Sprite MusicOnImg, SoundOnImg, MusicOffImg, SoundOffImg;
-    //[SerializeField] Image SliderImage;
+    [SerializeField] Image SliderImage;
     [SerializeField] private Animator QuestionAnim;
     [SerializeField] AudioClip ClickSound, CorrectAnsSound, GameOverSound;
     [SerializeField] Category[] AllCat;
@@ -47,17 +47,17 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        //if(isSlider)
-        //{
-        //    if(SliderImage.fillAmount < 1)
-        //    {
-        //        SliderImage.fillAmount += 0.2f * Time.deltaTime;
-        //    }
-        //    else
-        //    {
-        //        gameOverPanel.SetActive(true);
-        //    }
-        //}
+        if (isSlider)
+        {
+            if (SliderImage.fillAmount < 1)
+            {
+                SliderImage.fillAmount += 0.05f * Time.deltaTime;
+            }
+            else
+            {
+                gameOverPanel.SetActive(true);
+            }
+        }
     }
     public void QuestionSet()
     {
@@ -83,6 +83,7 @@ public class GameManager : MonoBehaviour
         ans = ans.Replace(" ", "");
         if (OptText.text == ans)
         {
+            SliderImage.fillAmount = 0;
             QuestionAnim.SetTrigger("QuestionTrigger");
             Debug.Log("Option text = "+OptText.text);
             Debug.Log("Answer text = "+ans);
@@ -93,6 +94,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            isSlider = false;
             Debug.Log("Answer is wrong");
         }
     }
@@ -103,6 +105,7 @@ public class GameManager : MonoBehaviour
     public void PauseBtnFirstPanel()
     {
         settingPanelAnim.Play("SettingPanel");
+        BackgroundClickRemoveImage.SetActive(true);
         settingPanel.SetActive(true);
     }
     public void SettingPanelClose()
@@ -113,10 +116,12 @@ public class GameManager : MonoBehaviour
     IEnumerator SettingPanelWait()
     {
         yield return new WaitForSeconds(0.5f);
+        BackgroundClickRemoveImage.SetActive(false);
         settingPanel.SetActive(false);
     }
     public void BackBtnSecondPanel()
     {
+        isSlider = false;
         BlackRoundAnim.SetTrigger("Start");
         StartCoroutine(SecondPanelWait());  
     }
@@ -132,8 +137,8 @@ public class GameManager : MonoBehaviour
     IEnumerator SecondPanelWait()
     {
         yield return new WaitForSeconds(1f);
-        QuestionAnim.SetTrigger("QuestionTrigger");
         isSlider = true;
+        QuestionAnim.SetTrigger("QuestionTrigger");
         if (firstPanel.activeInHierarchy)
         {
             secondPanel.SetActive(true);
