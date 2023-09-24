@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject firstPanel, secondPanel, settingPanel, gameOverPanel, BackgroundClickRemoveImage;
     [SerializeField] private Animator BlackRoundAnim;
     [SerializeField] private Animator settingPanelAnim;
+    [SerializeField] private Animator[] GameSecondPanel;
     [SerializeField] Button MusicBtn, SoundBtn;
     [SerializeField] Sprite MusicOnImg, SoundOnImg, MusicOffImg, SoundOffImg;
     [SerializeField] Image SliderImage;
@@ -56,6 +57,7 @@ public class GameManager : MonoBehaviour
             else
             {
                 gameOverPanel.SetActive(true);
+                BackgroundClickRemoveImage.SetActive(true);
             }
         }
     }
@@ -65,8 +67,8 @@ public class GameManager : MonoBehaviour
         {
             QuestionTxt.text = AllCat[selectedField].AllQuestion[questionNo].QuestionName;
 
-            Debug.Log(AllCat[selectedField].AllQuestion[questionNo].QuestionName);
-            Debug.Log(AllCat[selectedField].AllQuestion[questionNo].Answer);
+            //Debug.Log(AllCat[selectedField].AllQuestion[questionNo].QuestionName);
+            //Debug.Log(AllCat[selectedField].AllQuestion[questionNo].Answer);
 
             for (int k = 0; k < AllCat[selectedField].AllQuestion[questionNo].AllOption.Length; k++)
             {
@@ -94,9 +96,29 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            isSlider = false;
+            StartCoroutine(LifeBarHealthClose());
+            SliderImage.fillAmount = 0;
             Debug.Log("Answer is wrong");
         }
+    }
+    int i=3;
+    IEnumerator LifeBarHealthClose()
+    {
+        GameSecondPanel[i-1].SetTrigger("WrongAns");
+        yield return new WaitForSeconds(1.1f);
+        //GameObject.FindWithTag("LifeBar").gameObject.transform.GetChild(i).gameObject.SetActive(false);
+        i--;
+        if(i== 0)
+        {
+            gameOverPanel.SetActive(true);
+            isSlider = false;
+            i = 3;
+        }
+    }
+    public void BackBtnGameOverPanel()
+    {
+        gameOverPanel.SetActive(false);
+        BackgroundClickRemoveImage.SetActive(false);
     }
     public void HomeBtnSettingPanel()
     {
@@ -136,6 +158,7 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator SecondPanelWait()
     {
+        SliderImage.fillAmount = 0;
         yield return new WaitForSeconds(1f);
         isSlider = true;
         QuestionAnim.SetTrigger("QuestionTrigger");
@@ -168,7 +191,7 @@ public class GameManager : MonoBehaviour
     }
     public void MusicSet()
     {
-        if (Common.Instance.isMusicPlaying == false)
+        if (Common.Instance?.isMusicPlaying == false)
         {
             Common.Instance.gameObject.transform.GetChild(0).GetComponent<AudioSource>().mute = true;
             MusicBtn.GetComponent<Image>().sprite = MusicOffImg;
