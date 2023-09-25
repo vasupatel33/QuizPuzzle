@@ -91,6 +91,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+    int CurrentQuestion = 0;
     public void CheckAnswer(TextMeshProUGUI OptText)
     {
         string ans = AllCat[selectedField].AllQuestion[questionNo].Answer;
@@ -109,9 +110,22 @@ public class GameManager : MonoBehaviour
             questionNo++;
             ScoreTextGameOverPanel.text = ScoreText.text;
             QuestionSet();
+            CurrentQuestion++;
+            if(CurrentQuestion > 0)
+            {
+                PlayerPrefs.SetInt("QuestionCurrent", CurrentQuestion);
+            }
+            if(CurrentQuestion==14)
+            {
+                for(int i=0 ; i<= selectedField; i++)
+                {
+                    
+                }
+            }
         }
         else
         {
+            CurrentQuestion = 0;
             StartCoroutine(LifeBarHealthClose());
             SliderImage.fillAmount = 0;
             Debug.Log("Answer is wrong");
@@ -171,6 +185,11 @@ public class GameManager : MonoBehaviour
         StartCoroutine(SecondPanelWait());
         CatHeadingText.text = AllCat[selectedField].CatName;
         QuestionSet();
+
+        for(int i=0; i< category; i++)
+        {
+            PlayerPrefs.SetInt("QuestionNo",selectedField);
+        }
     }
     IEnumerator SecondPanelWait()
     {

@@ -23,13 +23,13 @@ public class Player : MonoBehaviour
         PlayerPrefs.SetInt("LoadValue", BtnValue);
 
         int Value = PlayerPrefs.GetInt("Score",0);// 7
-      //  if (BtnValue > Value)// 1 > 1
-       // {
-           // Value++;
-      //  }
-       // else
-       // {
-            SceneManager.LoadScene(1);
+        SceneManager.LoadScene(1);
+        //if (BtnValue > Value)// 1 > 1
+        //{
+        //    Value++;
+        //}
+        //else
+        //{
        // }
     //
         PlayerPrefs.SetInt("Score", Value);
