@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
         HighScoreText.text = HighScoreValue.ToString();
         if(ScoreValue > HighScoreValue)
         {
-            PlayerPrefs.SetInt("HighScore",);
+            //PlayerPrefs.SetInt("HighScore");
             HighScoreText.text = ScoreValue.ToString();
         }
     }
