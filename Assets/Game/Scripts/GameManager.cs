@@ -4,6 +4,7 @@ using TMPro;
 using TMPro.Examples;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -22,10 +23,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI[] AllOptText;
     [SerializeField] TextMeshProUGUI CatHeadingText;
     [SerializeField] TextMeshProUGUI ScoreText;
+    [SerializeField] TextMeshProUGUI HighScoreText;
+    [SerializeField] TextMeshProUGUI ScoreTextGameOverPanel;
+
     
     bool isSlider;
     int questionNo;
-    int ScoreValue=1;
+    int ScoreValue=50,HighScoreValue;
+    int scorePlayerPrefs;
     private void Start()
     {
 
@@ -45,6 +50,7 @@ public class GameManager : MonoBehaviour
         //    }
 
         //}
+        HighScoreText.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
     }
     private void Update()
     {
@@ -59,6 +65,13 @@ public class GameManager : MonoBehaviour
                 gameOverPanel.SetActive(true);
                 BackgroundClickRemoveImage.SetActive(true);
             }
+        }
+        //ScoreText.text = ScoreVar.ToString();
+        HighScoreText.text = HighScoreValue.ToString();
+        if(ScoreValue > HighScoreValue)
+        {
+            PlayerPrefs.SetInt("HighScore",);
+            HighScoreText.text = ScoreValue.ToString();
         }
     }
     public void QuestionSet()
@@ -90,8 +103,11 @@ public class GameManager : MonoBehaviour
             Debug.Log("Option text = "+OptText.text);
             Debug.Log("Answer text = "+ans);
             ScoreText.text = ScoreValue.ToString();
-            ScoreValue++;
+            ScoreValue+=50;
+            int.TryParse(ScoreText.text, out scorePlayerPrefs);
+            PlayerPrefs.SetInt("Score",scorePlayerPrefs);
             questionNo++;
+            ScoreTextGameOverPanel.text = ScoreText.text;
             QuestionSet();
         }
         else
