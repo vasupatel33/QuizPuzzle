@@ -423,10 +423,10 @@ RectTransform:
   - {fileID: 1617714567}
   m_Father: {fileID: 1871818339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 960, y: -380}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &32863911
 MonoBehaviour:
@@ -1072,10 +1072,10 @@ RectTransform:
   - {fileID: 1144453831}
   m_Father: {fileID: 1871818339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 360, y: -150}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &116040569
 MonoBehaviour:
@@ -2669,10 +2669,10 @@ RectTransform:
   - {fileID: 860306556}
   m_Father: {fileID: 1871818339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 360, y: -610}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &430777578
 MonoBehaviour:
@@ -3694,7 +3694,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &697122821
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4325,10 +4325,10 @@ RectTransform:
   - {fileID: 2119055100}
   m_Father: {fileID: 1871818339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1560, y: -380}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &821267038
 MonoBehaviour:
@@ -4458,10 +4458,10 @@ RectTransform:
   - {fileID: 228526683}
   m_Father: {fileID: 1871818339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 960, y: -150}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &826656698
 MonoBehaviour:
@@ -5149,10 +5149,10 @@ RectTransform:
   - {fileID: 175162076}
   m_Father: {fileID: 1871818339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 960, y: -610}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &938570493
 MonoBehaviour:
@@ -6629,12 +6629,20 @@ MonoBehaviour:
       Answer: Bankim Chandra Chatterji
   - CatName: GK
     AllQuestion:
-    - QuestionName: 
-      AllOption: []
-      Answer: 
-    - QuestionName: 
-      AllOption: []
-      Answer: 
+    - QuestionName: 'How many players are there in a cricket team?  '
+      AllOption:
+      - OptionsName: 5
+      - OptionsName: 9
+      - OptionsName: 15
+      - OptionsName: 11
+      Answer: 11
+    - QuestionName: 'Who is the Father of our Nation?  '
+      AllOption:
+      - OptionsName: Mahatma Gandhi
+      - OptionsName: Narerndra Modi
+      - OptionsName: APJ Abdul Kalam
+      - OptionsName: Dr. Rajendra Prasad
+      Answer: Mahatma Gandhi
     - QuestionName: 'How many letters are there in the English alphabet?  '
       AllOption:
       - OptionsName: 22 letters
@@ -6642,44 +6650,197 @@ MonoBehaviour:
       - OptionsName: 36 letters
       - OptionsName: 28 letters
       Answer: 26 letters
-    - QuestionName: 
-      AllOption: []
+    - QuestionName: Which is Capital of India?
+      AllOption:
+      - OptionsName: New Delhi
+      - OptionsName: Mumbai
+      - OptionsName: Bengaluru
+      - OptionsName: Surat
+      Answer: New Delhi
+    - QuestionName: "How many colours are there in India\u2019s National Flag? "
+      AllOption:
+      - OptionsName: Three
+      - OptionsName: One
+      - OptionsName: Four
+      - OptionsName: Five
       Answer: 
-    - QuestionName: 
-      AllOption: []
+    - QuestionName: 'What is the tallest mountain in the world?  '
+      AllOption:
+      - OptionsName: Himalaya
+      - OptionsName: Mount Everest
+      - OptionsName: Kangchenjunga
+      - OptionsName: Annapurna
+      Answer: Mount Everest
+    - QuestionName: '1 MB is equal to?  '
+      AllOption:
+      - OptionsName: 1200
+      - OptionsName: 1024
+      - OptionsName: 1000
+      - OptionsName: 1044
       Answer: 
-    - QuestionName: 
-      AllOption: []
+    - QuestionName: 'Who was the first person to walk on the moon?  '
+      AllOption:
+      - OptionsName: Neil Armstrong
+      - OptionsName: Buzz Aldrin
+      - OptionsName: Yuri Gagarin
+      - OptionsName: Alan Shepard
+      Answer: Neil Armstrong
+    - QuestionName: National Tree of India is?
+      AllOption:
+      - OptionsName: Sherman Tree
+      - OptionsName: Coconut Tree
+      - OptionsName: Banyan tree
+      - OptionsName: Mango Tree
       Answer: 
-    - QuestionName: 
-      AllOption: []
-      Answer: 
-    - QuestionName: 
-      AllOption: []
-      Answer: 
-    - QuestionName: 
-      AllOption: []
-      Answer: 
-    - QuestionName: 
-      AllOption: []
-      Answer: 
-    - QuestionName: 
-      AllOption: []
-      Answer: 
-    - QuestionName: 
-      AllOption: []
-      Answer: 
-    - QuestionName: 
-      AllOption: []
-      Answer: 
-    - QuestionName: 
-      AllOption: []
-      Answer: 
-    - QuestionName: 
-      AllOption: []
+    - QuestionName: 'Which is largest desert in the world?  '
+      AllOption:
+      - OptionsName: KALAHARI
+      - OptionsName: GOBI
+      - OptionsName: TAKLAMAKAN
+      - OptionsName: SAHARA
+      Answer: SAHARA
+    - QuestionName: 'In which direction does the sun rise? '
+      AllOption:
+      - OptionsName: North
+      - OptionsName: South
+      - OptionsName: East
+      - OptionsName: None Of These
+      Answer: East
+    - QuestionName: Which jungle is the Largest in the world?
+      AllOption:
+      - OptionsName: Amazon Forest
+      - OptionsName: Sahara
+      - OptionsName: Western Forest
+      - OptionsName: Atlantic Forest
+      Answer: Amazon Forest
+    - QuestionName: A figure with 8 sides is called?
+      AllOption:
+      - OptionsName: Octagon
+      - OptionsName: Hexagon
+      - OptionsName: Peltagon
+      - OptionsName: Nopalton
+      Answer: Octagon
+    - QuestionName: 'Who is the founder of Microsoft?  '
+      AllOption:
+      - OptionsName: Mark Zuckerbug
+      - OptionsName: Mukesh Ambani
+      - OptionsName: Bill Gates
+      - OptionsName: Salman Khan
+      Answer: Bill Gates
+    - QuestionName: Highest dam of India is?
+      AllOption:
+      - OptionsName: Hirakud Dam
+      - OptionsName: Bhakhra Dam
+      - OptionsName: Sardar Sarovar Dam
+      - OptionsName: Tehri Dam
       Answer: 
   - CatName: Animals
-    AllQuestion: []
+    AllQuestion:
+    - QuestionName: 'What is the fastest land animal? '
+      AllOption:
+      - OptionsName: Lion
+      - OptionsName: Cheetah
+      - OptionsName: Ostrich
+      - OptionsName: Tiger
+      Answer: Cheetah
+    - QuestionName: Which land animal has the biggest eyes?
+      AllOption:
+      - OptionsName: Elephant
+      - OptionsName: Lion
+      - OptionsName: Horse
+      - OptionsName: Ostrich
+      Answer: Ostrich
+    - QuestionName: 'What is the national bird of India?  '
+      AllOption:
+      - OptionsName: Peacock
+      - OptionsName: Kangaroo
+      - OptionsName: Lion
+      - OptionsName: Tiger
+      Answer: 
+    - QuestionName: 'Which animal can clean its ears with its 18-inch-long tongue?  '
+      AllOption:
+      - OptionsName: crocodile
+      - OptionsName: giraffe
+      - OptionsName: zebra
+      - OptionsName: kangaroo
+      Answer: giraffe
+    - QuestionName: "What\u2019s the name of the largest snake in the world? "
+      AllOption:
+      - OptionsName: Cold-blooded
+      - OptionsName: Chameleon
+      - OptionsName: snout
+      - OptionsName: Anaconda
+      Answer: Anaconda
+    - QuestionName: "What animal is known to be \"man\u2019s best friend\"? "
+      AllOption:
+      - OptionsName: Dog
+      - OptionsName: Panda
+      - OptionsName: Kangaroo
+      - OptionsName: Horse
+      Answer: Dog
+    - QuestionName: 'How many legs are there in a mosquito?  '
+      AllOption:
+      - OptionsName: Four
+      - OptionsName: Ten
+      - OptionsName: Six
+      - OptionsName: Five
+      Answer: Six
+    - QuestionName: 'What is the tallest bird in the world? '
+      AllOption:
+      - OptionsName: Penguins
+      - OptionsName: Pelicans
+      - OptionsName: Swans
+      - OptionsName: Ostrich
+      Answer: Ostrich
+    - QuestionName: 'Which bird is known to be the fastest bird? '
+      AllOption:
+      - OptionsName: Lion
+      - OptionsName: Pigeon
+      - OptionsName: Falcon
+      - OptionsName: Crow
+      Answer: Falcon
+    - QuestionName: 'Which insect can lift up to 50 times its body weight? '
+      AllOption:
+      - OptionsName: Ant
+      - OptionsName: Elephant
+      - OptionsName: Horse
+      - OptionsName: Leopard
+      Answer: Ant
+    - QuestionName: 'How many stomachs do cows have?  '
+      AllOption:
+      - OptionsName: Three
+      - OptionsName: Five
+      - OptionsName: Four
+      - OptionsName: Ten
+      Answer: Four
+    - QuestionName: 'What bird can rotate its head up to 270 degrees? '
+      AllOption:
+      - OptionsName: Peacock
+      - OptionsName: Parrot
+      - OptionsName: Owl
+      - OptionsName: Pegions
+      Answer: Owl
+    - QuestionName: "What are the only mammals that can\u2019t jump?  "
+      AllOption:
+      - OptionsName: Lion
+      - OptionsName: Hippopotamus
+      - OptionsName: Flamingo
+      - OptionsName: Elephants
+      Answer: Elephants
+    - QuestionName: 'What creature can make a sound louder than a jet engine? '
+      AllOption:
+      - OptionsName: Tiger
+      - OptionsName: Blue Whale
+      - OptionsName: Elephant
+      - OptionsName: Leopard
+      Answer: Blue Whale
+    - QuestionName: 'What is the fastest water animal?  '
+      AllOption:
+      - OptionsName: Porpoise
+      - OptionsName: Tuna
+      - OptionsName: Flying fish
+      - OptionsName: Sailfish
+      Answer: Sailfish
   - CatName: Geography
     AllQuestion: []
   - CatName: Logical
@@ -7266,10 +7427,10 @@ RectTransform:
   - {fileID: 1093091566}
   m_Father: {fileID: 1871818339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1560, y: -150}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1325056826
 MonoBehaviour:
@@ -9501,10 +9662,10 @@ RectTransform:
   - {fileID: 1821712478}
   m_Father: {fileID: 1871818339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 360, y: -380}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1936872050
 MonoBehaviour:
@@ -9892,10 +10053,10 @@ RectTransform:
   - {fileID: 191842647}
   m_Father: {fileID: 1871818339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1560, y: -610}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1998526890
 MonoBehaviour:
@@ -10292,10 +10453,10 @@ RectTransform:
   - {fileID: 416424282}
   m_Father: {fileID: 1871818339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 2160, y: -150}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2079764656
 MonoBehaviour:
