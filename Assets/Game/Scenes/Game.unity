@@ -6842,7 +6842,112 @@ MonoBehaviour:
       - OptionsName: Sailfish
       Answer: Sailfish
   - CatName: Geography
-    AllQuestion: []
+    AllQuestion:
+    - QuestionName: 'Which country is Taj Mahal in?  '
+      AllOption:
+      - OptionsName: India
+      - OptionsName: Australia
+      - OptionsName: Spain
+      - OptionsName: Europe
+      Answer: India
+    - QuestionName: "In which city is the world\u2019s tallest building located? "
+      AllOption:
+      - OptionsName: Pakistan
+      - OptionsName: Canada
+      - OptionsName: Japan
+      - OptionsName: Dubai
+      Answer: Dubai
+    - QuestionName: How many spokes in ashok chakra
+      AllOption:
+      - OptionsName: 20
+      - OptionsName: 24
+      - OptionsName: 22
+      - OptionsName: 26
+      Answer: 24
+    - QuestionName: 'Which is the coldest place on Earth?  '
+      AllOption:
+      - OptionsName: India
+      - OptionsName: Japan
+      - OptionsName: Antarctica
+      - OptionsName: USA
+      Answer: Antarctica
+    - QuestionName: 'In which country is the Great Pyramid of Giza located? '
+      AllOption:
+      - OptionsName: Egypt
+      - OptionsName: Canada
+      - OptionsName: Pakistan
+      - OptionsName: Russia
+      Answer: Egypt
+    - QuestionName: 'Which city in India is called the Pink City?  '
+      AllOption:
+      - OptionsName: Mumbai
+      - OptionsName: Delhi
+      - OptionsName: Bengaluru
+      - OptionsName: Jaipur
+      Answer: Jaipur
+    - QuestionName: 'What is the largest ocean in the world? '
+      AllOption:
+      - OptionsName: Arctic Ocean
+      - OptionsName: Antlantic Ocean
+      - OptionsName: Pacific Ocean
+      - OptionsName: None Of These
+      Answer: Pacific Ocean
+    - QuestionName: "What is India\u2019s official language?  "
+      AllOption:
+      - OptionsName: Punjabi
+      - OptionsName: Hindi
+      - OptionsName: English
+      - OptionsName: Gujarati
+      Answer: Hindi
+    - QuestionName: What is the capital of England?
+      AllOption:
+      - OptionsName: Africa
+      - OptionsName: London
+      - OptionsName: Ottawa
+      - OptionsName: San Francisco
+      Answer: London
+    - QuestionName: 'What is the capital city of America?  '
+      AllOption:
+      - OptionsName: Jakarta
+      - OptionsName: San Fransinco
+      - OptionsName: Washington, D.C
+      - OptionsName: New York
+      Answer: Washington, D.C
+    - QuestionName: "How much of the Earth\u2019s surface is covered by the ocean?"
+      AllOption:
+      - OptionsName: 10
+      - OptionsName: 90
+      - OptionsName: 30
+      - OptionsName: 70
+      Answer: 70
+    - QuestionName: What is the capital of Canada?
+      AllOption:
+      - OptionsName: Edmonton
+      - OptionsName: Montreal
+      - OptionsName: Ottawa
+      - OptionsName: Calgary
+      Answer: Ottawa
+    - QuestionName: 'Which is the longest river in the world?  '
+      AllOption:
+      - OptionsName: Mississippi River
+      - OptionsName: Yellow River
+      - OptionsName: The Nile River
+      - OptionsName: None of these
+      Answer: The Nile River
+    - QuestionName: 'What is the hottest continent on Earth? '
+      AllOption:
+      - OptionsName: Africa
+      - OptionsName: Asia
+      - OptionsName: Turkey
+      - OptionsName: USA
+      Answer: 
+    - QuestionName: 'Which country is called the Land of Rising Sun? '
+      AllOption:
+      - OptionsName: Japan
+      - OptionsName: Brazil
+      - OptionsName: China
+      - OptionsName: German
+      Answer: Japan
   - CatName: Logical
     AllQuestion: []
   QuestionTxt: {fileID: 908849438}
