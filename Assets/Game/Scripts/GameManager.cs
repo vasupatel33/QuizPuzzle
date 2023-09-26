@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Animator BlackRoundAnim;
     [SerializeField] private Animator settingPanelAnim;
     [SerializeField] private Animator[] GameSecondPanel;
+    [SerializeField] private Button[] CatButton;
     [SerializeField] Button MusicBtn, SoundBtn;
     [SerializeField] Sprite MusicOnImg, SoundOnImg, MusicOffImg, SoundOffImg;
     [SerializeField] Image SliderImage;
@@ -28,14 +29,20 @@ public class GameManager : MonoBehaviour
 
     
     bool isSlider;
-    int questionNo;
+    //int questionNo;
     int ScoreValue=50,HighScoreValue;
     int scorePlayerPrefs;
     private void Start()
     {
-
+        
         MusicSet();
         SoundSet();
+        int CatPrefs = PlayerPrefs.GetInt("CatPref", selectedCategory);
+        for(i = 0; i < AllCat[selectedCategory].CatName.Length ; i++)
+        {
+            CatButton[selectedCategory].interactable = true;
+            //AllCat[selectedCategory].CatName[selectedCategory].
+        }
         //for(int i = 0; i < AllCat.Length; i++)
         //{
         //    Debug.Log(AllCat[i].CatName);
@@ -76,58 +83,63 @@ public class GameManager : MonoBehaviour
     }
     public void QuestionSet()
     {
-        for (int j = 0; j < AllCat[selectedField].AllQuestion.Length; j++)
+        int QuestionNo = PlayerPrefs.GetInt("Question"+selectedField,0);//Question1
+        Debug.Log("Playerpreffffffffffff = " + QuestionNo);
+
+        if (QuestionNo < AllCat[selectedField].AllQuestion.Length)
         {
-            QuestionTxt.text = AllCat[selectedField].AllQuestion[questionNo].QuestionName;
-
-            //Debug.Log(AllCat[selectedField].AllQuestion[questionNo].QuestionName);
-            //Debug.Log(AllCat[selectedField].AllQuestion[questionNo].Answer);
-
-            for (int k = 0; k < AllCat[selectedField].AllQuestion[questionNo].AllOption.Length; k++)
+            for (int j = 0; j < AllCat[selectedField].AllQuestion.Length; j++)
             {
-                
-                AllOptText[k].text = AllCat[selectedField].AllQuestion[questionNo].AllOption[k].OptionsName;
-                Debug.Log(AllCat[selectedField].AllQuestion[selectedField].AllOption[k].OptionsName);
+           
+                Debug.Log("IF workkkssssssssssssssssssssssssssssssssssssssss");
+
+                QuestionTxt.text = AllCat[selectedField].AllQuestion[QuestionNo].QuestionName;
+
+                //Debug.Log(AllCat[selectedField].AllQuestion[questionNo].QuestionName);
+                Debug.Log(AllCat[selectedField].AllQuestion[QuestionNo].Answer);
+
+                for (int k = 0; k < AllCat[selectedField].AllQuestion[QuestionNo].AllOption.Length; k++)
+                {
+
+                    AllOptText[k].text = AllCat[selectedField].AllQuestion[QuestionNo].AllOption[k].OptionsName;
+                    //Debug.Log(AllCat[selectedField].AllQuestion[selectedField].AllOption[k].OptionsName);
+                }
+            
             }
         }
+        else
+        {
+            selectedCategory++;
+            PlayerPrefs.SetInt("CatPref",selectedCategory);
+            Debug.Log("All question overr");
+        }
     }
-    int CurrentQuestion = 0;
+
     public void CheckAnswer(TextMeshProUGUI OptText)
     {
-        string ans = AllCat[selectedField].AllQuestion[questionNo].Answer;
+        int QuestionNo = PlayerPrefs.GetInt("Question" + selectedField, 0);
+
+        string ans = AllCat[selectedField].AllQuestion[QuestionNo].Answer;
         OptText.text = OptText.text.Replace(" ", "");
         ans = ans.Replace(" ", "");
         if (OptText.text == ans)
         {
             SliderImage.fillAmount = 0;
             QuestionAnim.SetTrigger("QuestionTrigger");
-            Debug.Log("Option text = "+OptText.text);
-            Debug.Log("Answer text = "+ans);
+            //Debug.Log("Option text = "+OptText.text);
+            //Debug.Log("Answer text = "+ans);
             ScoreText.text = ScoreValue.ToString();
             ScoreValue+=50;
             int.TryParse(ScoreText.text, out scorePlayerPrefs);
             PlayerPrefs.SetInt("Score",scorePlayerPrefs);
-            questionNo++;
+            QuestionNo++;
+            PlayerPrefs.SetInt("Question"+selectedField, QuestionNo);
             ScoreTextGameOverPanel.text = ScoreText.text;
             QuestionSet();
-            CurrentQuestion++;
-            if(CurrentQuestion > 0)
-            {
-                PlayerPrefs.SetInt("QuestionCurrent", CurrentQuestion);
-            }
-            if(CurrentQuestion==14)
-            {
-                for(int i=0 ; i<= selectedField; i++)
-                {
-                    
-                }
-            }
         }
         else
         {
-            CurrentQuestion = 0;
             StartCoroutine(LifeBarHealthClose());
-            SliderImage.fillAmount = 0;
             Debug.Log("Answer is wrong");
         }
     }
@@ -141,12 +153,15 @@ public class GameManager : MonoBehaviour
         if(i== 0)
         {
             gameOverPanel.SetActive(true);
+            BackgroundClickRemoveImage.SetActive(true);
+            SliderImage.fillAmount = 0;
             isSlider = false;
             i = 3;
         }
     }
     public void BackBtnGameOverPanel()
     {
+        
         gameOverPanel.SetActive(false);
         BackgroundClickRemoveImage.SetActive(false);
     }
@@ -178,18 +193,16 @@ public class GameManager : MonoBehaviour
         StartCoroutine(SecondPanelWait());  
     }
     int selectedField;
+    int selectedCategory;
     public void SecondPanelOpen(int category)
     {
         selectedField = category;
+        selectedCategory = category;
         BlackRoundAnim.SetTrigger("Start");
         StartCoroutine(SecondPanelWait());
         CatHeadingText.text = AllCat[selectedField].CatName;
         QuestionSet();
 
-        for(int i=0; i< category; i++)
-        {
-            PlayerPrefs.SetInt("QuestionNo",selectedField);
-        }
     }
     IEnumerator SecondPanelWait()
     {
