@@ -106,7 +106,7 @@ public class GameManager : MonoBehaviour
                 QuestionTxt.text = AllCat[selectedField].AllQuestion[QuestionNo].QuestionName;
 
                 //Debug.Log(AllCat[selectedField].AllQuestion[questionNo].QuestionName);
-                Debug.Log(AllCat[selectedField].AllQuestion[QuestionNo].Answer);
+                 Debug.Log(AllCat[selectedField].AllQuestion[QuestionNo].Answer);
 
                 for (int k = 0; k < AllCat[selectedField].AllQuestion[QuestionNo].AllOption.Length; k++)
                 {
@@ -234,6 +234,7 @@ public class GameManager : MonoBehaviour
         {
             secondPanel.SetActive(false);
             firstPanel.SetActive(true);
+            isSlider = false;
             if (quesUnlock)
             {
                 GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.SetActive(false);
