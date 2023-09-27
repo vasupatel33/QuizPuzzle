@@ -34,15 +34,9 @@ public class GameManager : MonoBehaviour
     int scorePlayerPrefs;
     private void Start()
     {
+        Debug.Log("Start called");
+        QuestionUnlock();
         
-        MusicSet();
-        SoundSet();
-        int CatPrefs = PlayerPrefs.GetInt("CatPref", selectedCategory);
-        for(i = 0; i < AllCat[selectedCategory].CatName.Length ; i++)
-        {
-            CatButton[selectedCategory].interactable = true;
-            //AllCat[selectedCategory].CatName[selectedCategory].
-        }
         //for(int i = 0; i < AllCat.Length; i++)
         //{
         //    Debug.Log(AllCat[i].CatName);
@@ -58,6 +52,22 @@ public class GameManager : MonoBehaviour
 
         //}
         HighScoreText.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
+        MusicSet();
+        SoundSet();
+    }
+    public void QuestionUnlock()
+    {
+        int CatPrefs = PlayerPrefs.GetInt("CatPref", 0);
+        Debug.Log("Before  Category Prefabs = " + CatPrefs);
+        for (i = 0; i <= CatPrefs;/*AllCat[selectedCategory].CatName.Length*/  i++)
+        {
+            Debug.Log("Selected CAt = " + selectedCategory);
+            Debug.Log("Category Prefabs = " + CatPrefs);
+
+            CatButton[i].interactable = true;
+            PlayerPrefs.SetInt("CatPref", selectedCategory);
+            //AllCat[selectedCategory].CatName[selectedCategory].
+        }
     }
     private void Update()
     {
@@ -110,11 +120,13 @@ public class GameManager : MonoBehaviour
         else
         {
             selectedCategory++;
+            quesUnlock = true;
             PlayerPrefs.SetInt("CatPref",selectedCategory);
             Debug.Log("All question overr");
+            Debug.Log("Category = "+selectedCategory);
         }
     }
-
+    bool quesUnlock;
     public void CheckAnswer(TextMeshProUGUI OptText)
     {
         int QuestionNo = PlayerPrefs.GetInt("Question" + selectedField, 0);
@@ -161,7 +173,6 @@ public class GameManager : MonoBehaviour
     }
     public void BackBtnGameOverPanel()
     {
-        
         gameOverPanel.SetActive(false);
         BackgroundClickRemoveImage.SetActive(false);
     }
@@ -188,6 +199,10 @@ public class GameManager : MonoBehaviour
     }
     public void BackBtnSecondPanel()
     {
+        PlayerPrefs.GetInt("CatPref");
+        QuestionUnlock();
+        
+        Debug.Log("Category = "+selectedCategory);
         isSlider = false;
         BlackRoundAnim.SetTrigger("Start");
         StartCoroutine(SecondPanelWait());  
@@ -219,6 +234,10 @@ public class GameManager : MonoBehaviour
         {
             secondPanel.SetActive(false);
             firstPanel.SetActive(true);
+            if (quesUnlock)
+            {
+                GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.SetActive(false);
+            }
         }
         
     }

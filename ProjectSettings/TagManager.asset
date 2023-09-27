@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - LifeBar
+  - Content
   layers:
   - Default
   - TransparentFX

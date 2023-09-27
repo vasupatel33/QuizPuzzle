@@ -467,7 +467,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 32863912}
   m_OnClick:
     m_PersistentCalls:
@@ -1116,7 +1116,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 116040570}
   m_OnClick:
     m_PersistentCalls:
@@ -2253,10 +2253,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 5170
+  m_text: '50
+
+'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4eadf56d5e53df1468b945039937c48a, type: 2}
+  m_sharedMaterial: {fileID: -4540469152325072725, guid: 4eadf56d5e53df1468b945039937c48a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2286,7 +2288,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 30
   m_fontSizeMax: 70
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
   m_textAlignment: 65535
@@ -2364,8 +2366,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 169}
-  m_SizeDelta: {x: 702.3622, y: 121.5092}
+  m_AnchoredPosition: {x: -230, y: 100}
+  m_SizeDelta: {x: 400, y: 230}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &416424281
 GameObject:
@@ -2713,7 +2715,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 430777579}
   m_OnClick:
     m_PersistentCalls:
@@ -3096,7 +3098,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000045776367, y: 0}
+  m_AnchoredPosition: {x: -0.000030517578, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &530173832
@@ -3119,10 +3121,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 5170
+  m_text: '50
+
+'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4eadf56d5e53df1468b945039937c48a, type: 2}
+  m_sharedMaterial: {fileID: -4540469152325072725, guid: 4eadf56d5e53df1468b945039937c48a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3152,7 +3156,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 30
   m_fontSizeMax: 70
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
   m_textAlignment: 65535
@@ -4039,11 +4043,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2133926315}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.00047779}
-  m_SizeDelta: {x: 350, y: 120}
-  m_Pivot: {x: 0, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 7, y: 0}
+  m_SizeDelta: {x: 350, y: 138}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &759164299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4369,7 +4373,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 821267039}
   m_OnClick:
     m_PersistentCalls:
@@ -4502,7 +4506,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 826656699}
   m_OnClick:
     m_PersistentCalls:
@@ -5193,7 +5197,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 938570494}
   m_OnClick:
     m_PersistentCalls:
@@ -5661,11 +5665,11 @@ RectTransform:
   - {fileID: 530173831}
   m_Father: {fileID: 306521696}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -17, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 230, y: 100}
-  m_Pivot: {x: 1, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1123200135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6960,7 +6964,112 @@ MonoBehaviour:
       - OptionsName: German
       Answer: Japan
   - CatName: Logical
-    AllQuestion: []
+    AllQuestion:
+    - QuestionName: 
+      AllOption:
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      Answer: 
+    - QuestionName: 
+      AllOption:
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      Answer: 
+    - QuestionName: 
+      AllOption:
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      Answer: 
+    - QuestionName: 
+      AllOption:
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      Answer: 
+    - QuestionName: 
+      AllOption:
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      Answer: 
+    - QuestionName: 
+      AllOption:
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      Answer: 
+    - QuestionName: 
+      AllOption:
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      Answer: 
+    - QuestionName: 
+      AllOption:
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      Answer: 
+    - QuestionName: 
+      AllOption:
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      Answer: 
+    - QuestionName: 
+      AllOption:
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      Answer: 
+    - QuestionName: 
+      AllOption:
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      Answer: 
+    - QuestionName: 
+      AllOption:
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      Answer: 
+    - QuestionName: 
+      AllOption:
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      Answer: 
+    - QuestionName: 
+      AllOption:
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      Answer: 
+    - QuestionName: 
+      AllOption:
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      - OptionsName: 
+      Answer: 
   QuestionTxt: {fileID: 908849438}
   AllOptText:
   - {fileID: 1160065377}
@@ -7587,7 +7696,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1325056827}
   m_OnClick:
     m_PersistentCalls:
@@ -7751,11 +7860,11 @@ RectTransform:
   - {fileID: 279827729}
   m_Father: {fileID: 2133926315}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -17, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0}
   m_SizeDelta: {x: 230, y: 100}
-  m_Pivot: {x: 1, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1335586167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9597,7 +9706,7 @@ GameObject:
   - component: {fileID: 1871818341}
   m_Layer: 5
   m_Name: Content
-  m_TagString: Untagged
+  m_TagString: Content
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9628,7 +9737,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -0.11214166, y: 35}
+  m_AnchoredPosition: {x: -0.004303365, y: 35}
   m_SizeDelta: {x: 0, y: 720}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1871818340
@@ -9822,7 +9931,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1936872051}
   m_OnClick:
     m_PersistentCalls:
@@ -10213,7 +10322,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1998526891}
   m_OnClick:
     m_PersistentCalls:
@@ -10613,7 +10722,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2079764657}
   m_OnClick:
     m_PersistentCalls:
@@ -10700,11 +10809,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 306521696}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.00047779}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 350, y: 120}
-  m_Pivot: {x: 0, y: 0.5}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2117433163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11046,8 +11155,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 33}
-  m_SizeDelta: {x: 702.3622, y: 121.5092}
+  m_AnchoredPosition: {x: 230, y: 100}
+  m_SizeDelta: {x: 400, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
