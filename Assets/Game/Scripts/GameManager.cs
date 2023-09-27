@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] GameObject firstPanel, secondPanel, settingPanel, gameOverPanel, BackgroundClickRemoveImage;
+    [SerializeField] GameObject firstPanel, secondPanel, settingPanel, gameOverPanel, BackgroundClickRemoveImage, QuestionCompletePanel;
     [SerializeField] private Animator BlackRoundAnim;
     [SerializeField] private Animator settingPanelAnim;
     [SerializeField] private Animator[] GameSecondPanel;
@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
     {
         int CatPrefs = PlayerPrefs.GetInt("CatPref", 0);
         Debug.Log("Before  Category Prefabs = " + CatPrefs);
-        for (i = 0; i <= CatPrefs;/*AllCat[selectedCategory].CatName.Length*/  i++)
+        for (int i = 0; i <= CatPrefs;/*AllCat[selectedCategory].CatName.Length*/  i++)
         {
             Debug.Log("Selected CAt = " + selectedCategory);
             Debug.Log("Category Prefabs = " + CatPrefs);
@@ -123,6 +123,7 @@ public class GameManager : MonoBehaviour
             quesUnlock = true;
             PlayerPrefs.SetInt("CatPref",selectedCategory);
             Debug.Log("All question overr");
+            QuestionCompletePanel.SetActive(true);
             Debug.Log("Category = "+selectedCategory);
         }
     }
@@ -155,20 +156,20 @@ public class GameManager : MonoBehaviour
             Debug.Log("Answer is wrong");
         }
     }
-    int i=3;
+    int index=3;
     IEnumerator LifeBarHealthClose()
     {
-        GameSecondPanel[i-1].SetTrigger("WrongAns");
+        GameSecondPanel[index-1].SetTrigger("WrongAns");
         yield return new WaitForSeconds(1.1f);
         //GameObject.FindWithTag("LifeBar").gameObject.transform.GetChild(i).gameObject.SetActive(false);
-        i--;
-        if(i== 0)
+        index--;
+        if(index == 0)
         {
             gameOverPanel.SetActive(true);
             BackgroundClickRemoveImage.SetActive(true);
             SliderImage.fillAmount = 0;
             isSlider = false;
-            i = 3;
+            index = 3;
         }
     }
     public void BackBtnGameOverPanel()
