@@ -6409,6 +6409,7 @@ MonoBehaviour:
   settingPanel: {fileID: 195955506}
   gameOverPanel: {fileID: 259597447}
   BackgroundClickRemoveImage: {fileID: 1570366951}
+  QuestionCompletePanel: {fileID: 924798523}
   BlackRoundAnim: {fileID: 1987104593}
   settingPanelAnim: {fileID: 195955510}
   GameSecondPanel:
@@ -10314,7 +10315,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -0.004303365, y: 35}
+  m_AnchoredPosition: {x: -0.0002476525, y: 35}
   m_SizeDelta: {x: 0, y: 720}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1871818340

@@ -30,11 +30,18 @@ public class GameManager : MonoBehaviour
     
     bool isSlider;
     //int questionNo;
-    int ScoreValue=50,HighScoreValue;
+    int ScoreValue=0,HighScoreValue;
     int scorePlayerPrefs;
     private void Start()
     {
+        if (quesUnlock)
+        {
+            Debug.Log("If workss");
+            GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.SetActive(false);
+        }
         Debug.Log("Start called");
+        int value = PlayerPrefs.GetInt("HighScore");
+        HighScoreText.text = value.ToString();
         QuestionUnlock();
         
         //for(int i = 0; i < AllCat.Length; i++)
@@ -84,37 +91,25 @@ public class GameManager : MonoBehaviour
             }
         }
         //ScoreText.text = ScoreVar.ToString();
-        HighScoreText.text = HighScoreValue.ToString();
-        if(ScoreValue > HighScoreValue)
-        {
-            //PlayerPrefs.SetInt("HighScore");
-            HighScoreText.text = ScoreValue.ToString();
-        }
+        
     }
     public void QuestionSet()
     {
-        int QuestionNo = PlayerPrefs.GetInt("Question"+selectedField,0);//Question1
+        int QuestionNo = PlayerPrefs.GetInt("Question"+selectedField,0);//Question0
         Debug.Log("Playerpreffffffffffff = " + QuestionNo);
 
         if (QuestionNo < AllCat[selectedField].AllQuestion.Length)
         {
             for (int j = 0; j < AllCat[selectedField].AllQuestion.Length; j++)
             {
-           
-                Debug.Log("IF workkkssssssssssssssssssssssssssssssssssssssss");
-
                 QuestionTxt.text = AllCat[selectedField].AllQuestion[QuestionNo].QuestionName;
 
-                //Debug.Log(AllCat[selectedField].AllQuestion[questionNo].QuestionName);
                  Debug.Log(AllCat[selectedField].AllQuestion[QuestionNo].Answer);
 
                 for (int k = 0; k < AllCat[selectedField].AllQuestion[QuestionNo].AllOption.Length; k++)
                 {
-
                     AllOptText[k].text = AllCat[selectedField].AllQuestion[QuestionNo].AllOption[k].OptionsName;
-                    //Debug.Log(AllCat[selectedField].AllQuestion[selectedField].AllOption[k].OptionsName);
                 }
-            
             }
         }
         else
@@ -130,7 +125,7 @@ public class GameManager : MonoBehaviour
     bool quesUnlock;
     public void CheckAnswer(TextMeshProUGUI OptText)
     {
-        int QuestionNo = PlayerPrefs.GetInt("Question" + selectedField, 0);
+        int QuestionNo = PlayerPrefs.GetInt("Question" + selectedField, 0);//Question0
 
         string ans = AllCat[selectedField].AllQuestion[QuestionNo].Answer;
         OptText.text = OptText.text.Replace(" ", "");
@@ -139,15 +134,22 @@ public class GameManager : MonoBehaviour
         {
             SliderImage.fillAmount = 0;
             QuestionAnim.SetTrigger("QuestionTrigger");
-            //Debug.Log("Option text = "+OptText.text);
-            //Debug.Log("Answer text = "+ans);
-            ScoreText.text = ScoreValue.ToString();
+            
             ScoreValue+=50;
+            ScoreText.text = ScoreValue.ToString();
             int.TryParse(ScoreText.text, out scorePlayerPrefs);
             PlayerPrefs.SetInt("Score",scorePlayerPrefs);
             QuestionNo++;
             PlayerPrefs.SetInt("Question"+selectedField, QuestionNo);
             ScoreTextGameOverPanel.text = ScoreText.text;
+
+            HighScoreText.text = HighScoreValue.ToString();
+            if (ScoreValue > HighScoreValue)
+            {
+                PlayerPrefs.SetInt("HighScore", ScoreValue);
+                HighScoreText.text = ScoreValue.ToString();
+            }
+
             QuestionSet();
         }
         else
@@ -228,17 +230,23 @@ public class GameManager : MonoBehaviour
         QuestionAnim.SetTrigger("QuestionTrigger");
         if (firstPanel.activeInHierarchy)
         {
+            Debug.Log("Ifff Worksssssssssssssssssssssssssss");
             secondPanel.SetActive(true);
             firstPanel.SetActive(false);
         }
         else
         {
+            Debug.Log("Else Worksssssssssssssssssssssssssss");
+            QuestionCompletePanel.SetActive(false);
             secondPanel.SetActive(false);
             firstPanel.SetActive(true);
             isSlider = false;
             if (quesUnlock)
             {
+                //GameObject content = GameObject.FindWithTag("Content");
+                //content.transform.GetChild(selectedCategory - 1).gameObject.SetActive(false);
                 GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.SetActive(false);
+               
             }
         }
         

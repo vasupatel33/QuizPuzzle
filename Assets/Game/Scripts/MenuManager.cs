@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
-    [SerializeField] private GameObject firstPanel, SettingPanel, AboutPanel;
+    [SerializeField] private GameObject firstPanel, SettingPanel, AboutPanel, BackGroundClickRemoveImage;
     [SerializeField] Animator settingPanelAnim, AboutPanelAnim;
     [SerializeField] Button MusicBtn, SoundBtn;
     [SerializeField] Sprite MusicOnImg, SoundOnImg,MusicOffImg,SoundOffImg;
@@ -25,6 +25,7 @@ public class MenuManager : MonoBehaviour
     {
         Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
         SettingPanel.SetActive(true);
+        BackGroundClickRemoveImage.SetActive(true);
         settingPanelAnim.Play("SettingPanel");
     }
     
@@ -32,6 +33,7 @@ public class MenuManager : MonoBehaviour
     {
         Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
         settingPanelAnim.Play("SettingPanelClose");
+        BackGroundClickRemoveImage.SetActive(false);
         StartCoroutine(SettingPanelWait());
     }
     IEnumerator SettingPanelWait()
@@ -43,12 +45,14 @@ public class MenuManager : MonoBehaviour
     {
         Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
         AboutPanel.SetActive(true);
+        BackGroundClickRemoveImage.SetActive(true);
         AboutPanelAnim.Play("settingPanelAnim");
     }
     public void BackbtnAboutPanel()
     {
         Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
         AboutPanelAnim.Play("AboutPanelClose");
+        BackGroundClickRemoveImage.SetActive(false);
         StartCoroutine(AboutPanelWait());
     }
     IEnumerator AboutPanelWait()
