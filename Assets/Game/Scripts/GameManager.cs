@@ -66,14 +66,13 @@ public class GameManager : MonoBehaviour
     {
         int CatPrefs = PlayerPrefs.GetInt("CatPref", 0);
         Debug.Log("Before  Category Prefabs = " + CatPrefs);
-        for (int i = 0; i <= CatPrefs;/*AllCat[selectedCategory].CatName.Length*/  i++)
+        for (int i = 0; i <= CatPrefs; i++)
         {
             Debug.Log("Selected CAt = " + selectedCategory);
             Debug.Log("Category Prefabs = " + CatPrefs);
 
             CatButton[i].interactable = true;
             PlayerPrefs.SetInt("CatPref", selectedCategory);
-            //AllCat[selectedCategory].CatName[selectedCategory].
         }
     }
     private void Update()
@@ -90,12 +89,10 @@ public class GameManager : MonoBehaviour
                 BackgroundClickRemoveImage.SetActive(true);
             }
         }
-        //ScoreText.text = ScoreVar.ToString();
-        
     }
     public void QuestionSet()
     {
-        int QuestionNo = PlayerPrefs.GetInt("Question"+selectedField,0);//Question0
+        int QuestionNo = PlayerPrefs.GetInt("Question"+selectedField,0);
         Debug.Log("Playerpreffffffffffff = " + QuestionNo);
 
         if (QuestionNo < AllCat[selectedField].AllQuestion.Length)
@@ -125,7 +122,7 @@ public class GameManager : MonoBehaviour
     bool quesUnlock;
     public void CheckAnswer(TextMeshProUGUI OptText)
     {
-        int QuestionNo = PlayerPrefs.GetInt("Question" + selectedField, 0);//Question0
+        int QuestionNo = PlayerPrefs.GetInt("Question" + selectedField, 0);
 
         string ans = AllCat[selectedField].AllQuestion[QuestionNo].Answer;
         OptText.text = OptText.text.Replace(" ", "");
@@ -163,7 +160,7 @@ public class GameManager : MonoBehaviour
     {
         GameSecondPanel[index-1].SetTrigger("WrongAns");
         yield return new WaitForSeconds(1.1f);
-        //GameObject.FindWithTag("LifeBar").gameObject.transform.GetChild(i).gameObject.SetActive(false);
+
         index--;
         if(index == 0)
         {
@@ -230,23 +227,18 @@ public class GameManager : MonoBehaviour
         QuestionAnim.SetTrigger("QuestionTrigger");
         if (firstPanel.activeInHierarchy)
         {
-            Debug.Log("Ifff Worksssssssssssssssssssssssssss");
             secondPanel.SetActive(true);
             firstPanel.SetActive(false);
         }
         else
         {
-            Debug.Log("Else Worksssssssssssssssssssssssssss");
             QuestionCompletePanel.SetActive(false);
             secondPanel.SetActive(false);
             firstPanel.SetActive(true);
             isSlider = false;
             if (quesUnlock)
             {
-                //GameObject content = GameObject.FindWithTag("Content");
-                //content.transform.GetChild(selectedCategory - 1).gameObject.SetActive(false);
                 GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.SetActive(false);
-               
             }
         }
         
