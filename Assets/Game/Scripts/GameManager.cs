@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Sprite MusicOnImg, SoundOnImg, MusicOffImg, SoundOffImg;
     [SerializeField] Image SliderImage;
     [SerializeField] private Animator QuestionAnim;
-    [SerializeField] AudioClip ClickSound, CorrectAnsSound, GameOverSound;
+    [SerializeField] AudioClip ClickSound, CorrectAnsSound, GameOverSound, WrongAnswerSound;
     [SerializeField] Category[] AllCat;
     [SerializeField] TextMeshProUGUI QuestionTxt;
     [SerializeField] TextMeshProUGUI[] AllOptText;
@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI ScoreText;
     [SerializeField] TextMeshProUGUI HighScoreText;
     [SerializeField] TextMeshProUGUI ScoreTextGameOverPanel;
-
+            
     
     bool isSlider;
     //int questionNo;
@@ -37,7 +37,8 @@ public class GameManager : MonoBehaviour
         if (quesUnlock)
         {
             Debug.Log("If workss");
-            GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.SetActive(false);
+            GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.GetComponent<SpriteRenderer>().color = Color.black;
+
         }
         Debug.Log("Start called");
         int value = PlayerPrefs.GetInt("HighScore");
@@ -98,7 +99,7 @@ public class GameManager : MonoBehaviour
         if (QuestionNo < AllCat[selectedField].AllQuestion.Length)
         {
             for (int j = 0; j < AllCat[selectedField].AllQuestion.Length; j++)
-            {
+             {
                 QuestionTxt.text = AllCat[selectedField].AllQuestion[QuestionNo].QuestionName;
 
                  Debug.Log(AllCat[selectedField].AllQuestion[QuestionNo].Answer);
@@ -116,6 +117,7 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("CatPref",selectedCategory);
             Debug.Log("All question overr");
             QuestionCompletePanel.SetActive(true);
+            BackgroundClickRemoveImage.SetActive(true);
             Debug.Log("Category = "+selectedCategory);
         }
     }
@@ -129,6 +131,7 @@ public class GameManager : MonoBehaviour
         ans = ans.Replace(" ", "");
         if (OptText.text == ans)
         {
+            Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(CorrectAnsSound);
             SliderImage.fillAmount = 0;
             QuestionAnim.SetTrigger("QuestionTrigger");
             
@@ -151,6 +154,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(WrongAnswerSound);
             StartCoroutine(LifeBarHealthClose());
             Debug.Log("Answer is wrong");
         }
@@ -159,11 +163,12 @@ public class GameManager : MonoBehaviour
     IEnumerator LifeBarHealthClose()
     {
         GameSecondPanel[index-1].SetTrigger("WrongAns");
-        yield return new WaitForSeconds(1.1f);
+        yield return new WaitForSeconds(0.5f);
 
         index--;
         if(index == 0)
         {
+            Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(GameOverSound);
             gameOverPanel.SetActive(true);
             BackgroundClickRemoveImage.SetActive(true);
             SliderImage.fillAmount = 0;
@@ -171,23 +176,44 @@ public class GameManager : MonoBehaviour
             index = 3;
         }
     }
+    public void UnlockLevelButtonClicked()
+    {
+        QuestionCompletePanel.SetActive(false);
+        secondPanel.SetActive(false);
+        firstPanel.SetActive(true);
+        isSlider = false;
+        BackgroundClickRemoveImage.SetActive(false);
+        PlayerPrefs.GetInt("CatPref");
+        QuestionUnlock();
+        if (quesUnlock)
+        {
+            GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.GetComponent<SpriteRenderer>().color = Color.black;
+            //GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.SetActive(false);
+        }
+    }
     public void BackBtnGameOverPanel()
     {
+        Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
         gameOverPanel.SetActive(false);
+        firstPanel.SetActive(true);
+        secondPanel.SetActive(false);
         BackgroundClickRemoveImage.SetActive(false);
     }
     public void HomeBtnSettingPanel()
     {
+        Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
         SceneManager.LoadScene(0);
     }
     public void PauseBtnFirstPanel()
     {
+        Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
         settingPanelAnim.Play("SettingPanel");
         BackgroundClickRemoveImage.SetActive(true);
         settingPanel.SetActive(true);
     }
     public void SettingPanelClose()
     {
+        Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
         settingPanelAnim.Play("SettingPanelClose");
         StartCoroutine(SettingPanelWait());
     }
@@ -199,6 +225,7 @@ public class GameManager : MonoBehaviour
     }
     public void BackBtnSecondPanel()
     {
+        Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
         PlayerPrefs.GetInt("CatPref");
         QuestionUnlock();
         
@@ -211,6 +238,7 @@ public class GameManager : MonoBehaviour
     int selectedCategory;
     public void SecondPanelOpen(int category)
     {
+        Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
         selectedField = category;
         selectedCategory = category;
         BlackRoundAnim.SetTrigger("Start");
@@ -238,7 +266,9 @@ public class GameManager : MonoBehaviour
             isSlider = false;
             if (quesUnlock)
             {
-                GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.SetActive(false);
+                GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.GetComponent<SpriteRenderer>().color = Color.black;
+                //GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.SetActive(false);
+                PlayerPrefs.GetInt("CatPref",selectedField);
             }
         }
         

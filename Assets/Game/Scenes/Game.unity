@@ -6437,7 +6437,8 @@ MonoBehaviour:
   QuestionAnim: {fileID: 908849440}
   ClickSound: {fileID: 8300000, guid: 7be1896f311862047a0036ebfb6b6f8d, type: 3}
   CorrectAnsSound: {fileID: 8300000, guid: a436e460881bcc44881bee0fd4c32027, type: 3}
-  GameOverSound: {fileID: 8300000, guid: e0e00b7661702a54fab0fc11afe05d61, type: 3}
+  GameOverSound: {fileID: 8300000, guid: 82c6988fda75faf4f8be9203d222d276, type: 3}
+  WrongAnswerSound: {fileID: 8300000, guid: 65518facabe5dc94d9f5c89034086884, type: 3}
   AllCat:
   - CatName: Science
     AllQuestion:
@@ -8664,8 +8665,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 601574960}
-  - {fileID: 1570366952}
   - {fileID: 697122821}
+  - {fileID: 1570366952}
   - {fileID: 195955507}
   - {fileID: 924798524}
   - {fileID: 259597448}
@@ -9953,7 +9954,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1151486120}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: BackBtnSecondPanel
+        m_MethodName: UnlockLevelButtonClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10712,7 +10713,7 @@ GameObject:
   - component: {fileID: 1987104589}
   - component: {fileID: 1987104593}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: BlackROundCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
