@@ -1,13 +1,12 @@
 using System.Collections;
-using System.Collections.Generic;
+using Game.Utility;
+using GoogleMobileAds.Samples;
 using TMPro;
-using TMPro.Examples;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<GameManager>
 {
     [SerializeField] GameObject firstPanel, secondPanel, settingPanel, gameOverPanel, BackgroundClickRemoveImage, QuestionCompletePanel;
     [SerializeField] private Animator BlackRoundAnim;
@@ -34,13 +33,13 @@ public class GameManager : MonoBehaviour
     int scorePlayerPrefs;
     private void Start()
     {
+        GoogleMobileAdsController.Instance.ShowBannerAdd();
         if (quesUnlock)
         {
             Debug.Log("If workss");
             GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.GetComponent<SpriteRenderer>().color = Color.black;
 
         }
-        Debug.Log("Start called");
         int value = PlayerPrefs.GetInt("HighScore");
         HighScoreText.text = value.ToString();
         QuestionUnlock();
@@ -69,8 +68,8 @@ public class GameManager : MonoBehaviour
         Debug.Log("Before  Category Prefabs = " + CatPrefs);
         for (int i = 0; i <= CatPrefs; i++)
         {
-            Debug.Log("Selected CAt = " + selectedCategory);
-            Debug.Log("Category Prefabs = " + CatPrefs);
+            //Debug.Log("Selected CAt = " + selectedCategory);
+            //Debug.Log("Category Prefabs = " + CatPrefs);
 
             CatButton[i].interactable = true;
             PlayerPrefs.SetInt("CatPref", selectedCategory);
@@ -94,7 +93,6 @@ public class GameManager : MonoBehaviour
     public void QuestionSet()
     {
         int QuestionNo = PlayerPrefs.GetInt("Question"+selectedField,0);
-        Debug.Log("Playerpreffffffffffff = " + QuestionNo);
 
         if (QuestionNo < AllCat[selectedField].AllQuestion.Length)
         {
@@ -115,10 +113,8 @@ public class GameManager : MonoBehaviour
             selectedCategory++;
             quesUnlock = true;
             PlayerPrefs.SetInt("CatPref",selectedCategory);
-            Debug.Log("All question overr");
             QuestionCompletePanel.SetActive(true);
             BackgroundClickRemoveImage.SetActive(true);
-            Debug.Log("Category = "+selectedCategory);
         }
     }
     bool quesUnlock;
@@ -134,13 +130,13 @@ public class GameManager : MonoBehaviour
             Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(CorrectAnsSound);
             SliderImage.fillAmount = 0;
             QuestionAnim.SetTrigger("QuestionTrigger");
-            
-            ScoreValue+=50;
+
+            ScoreValue += 50;
             ScoreText.text = ScoreValue.ToString();
             int.TryParse(ScoreText.text, out scorePlayerPrefs);
-            PlayerPrefs.SetInt("Score",scorePlayerPrefs);
+            PlayerPrefs.SetInt("Score", scorePlayerPrefs);
             QuestionNo++;
-            PlayerPrefs.SetInt("Question"+selectedField, QuestionNo);
+            PlayerPrefs.SetInt("Question" + selectedField, QuestionNo);
             ScoreTextGameOverPanel.text = ScoreText.text;
 
             HighScoreText.text = HighScoreValue.ToString();
@@ -154,27 +150,45 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(WrongAnswerSound);
+            
             StartCoroutine(LifeBarHealthClose());
-            Debug.Log("Answer is wrong");
         }
     }
     int index=3;
+    int vall = 1;
     IEnumerator LifeBarHealthClose()
     {
         GameSecondPanel[index-1].SetTrigger("WrongAns");
+        if (vall < 3)
+        {
+            Debug.Log("Value is =" + vall);
+            Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(WrongAnswerSound);
+            vall++;
+            Debug.Log("After Value is =" + vall);
+        }
+        else
+        {
+            Debug.Log("Else calleedd");
+            vall = 1;
+        }
         yield return new WaitForSeconds(0.5f);
 
         index--;
         if(index == 0)
         {
+            
             Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(GameOverSound);
+            Debug.Log("GameOVer SOund Playssss");
             gameOverPanel.SetActive(true);
             BackgroundClickRemoveImage.SetActive(true);
             SliderImage.fillAmount = 0;
             isSlider = false;
             index = 3;
         }
+    }
+    public void RewardMethodForGiveLife()
+    {
+        GoogleMobileAdsController.Instance.ShowRewardAdd();
     }
     public void UnlockLevelButtonClicked()
     {
