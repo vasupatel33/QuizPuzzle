@@ -1,5 +1,6 @@
 using System.Collections;
 using Game.Utility;
+using GoogleMobileAds.Sample;
 using GoogleMobileAds.Samples;
 using TMPro;
 using UnityEngine;
@@ -252,6 +253,7 @@ public class GameManager : Singleton<GameManager>
     int selectedCategory;
     public void SecondPanelOpen(int category)
     {
+        //BannerViewController.Instance.DestroyAd();
         Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
         selectedField = category;
         selectedCategory = category;

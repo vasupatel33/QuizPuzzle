@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using GoogleMobileAds.Samples;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -20,6 +21,7 @@ public class MenuManager : MonoBehaviour
     {
         Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
         SceneManager.LoadScene(1);
+        GoogleMobileAdsController.Instance.ShowBannerAdd(); 
     }
     public void SettingBtnClicked()
     {

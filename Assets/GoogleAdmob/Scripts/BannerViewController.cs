@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using GoogleMobileAds.Api;
+using Game.Utility;
 
 namespace GoogleMobileAds.Sample
 {
@@ -8,12 +9,12 @@ namespace GoogleMobileAds.Sample
     /// Demonstrates how to use Google Mobile Ads banner views.
     /// </summary>
     [AddComponentMenu("GoogleMobileAds/Samples/BannerViewController")]
-    public class BannerViewController : MonoBehaviour
+    public class BannerViewController : Singleton<BannerViewController>
     {
         /// <summary>
         /// UI element activated when an ad is ready to show.
         /// </summary>
-        public GameObject AdLoadedStatus;
+        //public GameObject AdLoadedStatus;
 
         // These ad units are configured to always serve test ads.
 #if UNITY_ANDROID
@@ -40,7 +41,7 @@ namespace GoogleMobileAds.Sample
             }
 
             // Create a 320x50 banner at top of the screen.
-            _bannerView = new BannerView(_adUnitId, AdSize.Banner, AdPosition.Top);
+            _bannerView = new BannerView(_adUnitId, AdSize.Banner, AdPosition.Bottom);
 
             // Listen to events the banner may raise.
             ListenToAdEvents();
@@ -105,8 +106,6 @@ namespace GoogleMobileAds.Sample
                 _bannerView = null;
             }
 
-            // Inform the UI that the ad is not ready.
-            AdLoadedStatus?.SetActive(false);
         }
 
         /// <summary>
@@ -134,9 +133,6 @@ namespace GoogleMobileAds.Sample
             {
                 Debug.Log("Banner view loaded an ad with response : "
                     + _bannerView.GetResponseInfo());
-
-                // Inform the UI that the ad is ready.
-                AdLoadedStatus?.SetActive(true);
             };
             // Raised when an ad fails to load into the banner view.
             _bannerView.OnBannerAdLoadFailed += (LoadAdError error) =>
