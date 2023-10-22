@@ -1,6 +1,6 @@
 using System.Collections;
+using System.Collections.Generic;
 using Game.Utility;
-using GoogleMobileAds.Sample;
 using GoogleMobileAds.Samples;
 using TMPro;
 using UnityEngine;
@@ -26,14 +26,26 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] TextMeshProUGUI ScoreText;
     [SerializeField] TextMeshProUGUI HighScoreText;
     [SerializeField] TextMeshProUGUI ScoreTextGameOverPanel;
-            
-    
+    [SerializeField] TextMeshProUGUI CountDownText;
+    [SerializeField] float timeRemaining = 10;
+    [SerializeField] List<GameObject> LifeBarObject;
+    [SerializeField] List<GameObject> LifeBarObjectSecondPanel;
+
+    bool timerIsRunning;
     bool isSlider;
     //int questionNo;
     int ScoreValue=0,HighScoreValue;
     int scorePlayerPrefs;
+    public void DisplayTime(float timeToDisplay)
+    {
+        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+        CountDownText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
     private void Start()
     {
+        timerIsRunning = false;
+
         GoogleMobileAdsController.Instance.ShowBannerAdd();
         if (quesUnlock)
         {
@@ -88,6 +100,29 @@ public class GameManager : Singleton<GameManager>
             {
                 gameOverPanel.SetActive(true);
                 BackgroundClickRemoveImage.SetActive(true);
+            }
+        }
+        //PlayerPrefs.GetInt("LifePref", 3);
+        if (timerIsRunning)
+        {
+            CountDownText.gameObject.SetActive(true);
+            if (timeRemaining > 0)
+            {
+                timeRemaining -= Time.deltaTime;
+                DisplayTime(timeRemaining);
+            }
+            else
+            {
+                int LifeCount = PlayerPrefs.GetInt("LifePref", 3);//2
+                LifeBarObject[LifeCount].gameObject.SetActive(true);
+                LifeCount++;//3
+                PlayerPrefs.SetInt("LifePref",LifeCount);//3
+                Debug.Log("After LifeCount = "+LifeCount);
+                Debug.Log("Time has run out!");
+                timeRemaining = 0;
+                timerIsRunning = false;
+                CountDownText.gameObject.SetActive(false);
+
             }
         }
     }
@@ -159,23 +194,34 @@ public class GameManager : Singleton<GameManager>
     int vall = 1;
     IEnumerator LifeBarHealthClose()
     {
-        GameSecondPanel[index-1].SetTrigger("WrongAns");
+        int LifeCount = PlayerPrefs.GetInt("LifePref", index);
+        index = PlayerPrefs.GetInt("LifePref",LifeCount);
+        Debug.Log("LifeCount - "+LifeCount);
+        Debug.Log("Before Index"+index);
+        GameSecondPanel[LifeCount-1].SetTrigger("WrongAns");
         if (vall < 3)
         {
-            Debug.Log("Value is =" + vall);
             Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(WrongAnswerSound);
             vall++;
-            Debug.Log("After Value is =" + vall);
         }
         else
         {
-            Debug.Log("Else calleedd");
+            //Debug.Log("Else calleedd");
             vall = 1;
         }
         yield return new WaitForSeconds(0.5f);
 
         index--;
-        if(index == 0)
+        if (index < 3)
+        {
+            Debug.Log("After index -" + index);
+            timerIsRunning = true;
+            timeRemaining = 15f;
+        }
+
+        PlayerPrefs.SetInt("LifePref", index);//2
+        Debug.Log("Index = "+index);//2
+        if (index == 0)
         {
             
             Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(GameOverSound);
@@ -184,7 +230,7 @@ public class GameManager : Singleton<GameManager>
             BackgroundClickRemoveImage.SetActive(true);
             SliderImage.fillAmount = 0;
             isSlider = false;
-            index = 3;
+            // index = 3;
         }
     }
     public void RewardMethodForGiveLife()
@@ -200,6 +246,7 @@ public class GameManager : Singleton<GameManager>
         BackgroundClickRemoveImage.SetActive(false);
         PlayerPrefs.GetInt("CatPref");
         QuestionUnlock();
+        GoogleMobileAdsController.Instance.ShowRewardAdd();
         if (quesUnlock)
         {
             GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.GetComponent<SpriteRenderer>().color = Color.black;
@@ -253,6 +300,12 @@ public class GameManager : Singleton<GameManager>
     int selectedCategory;
     public void SecondPanelOpen(int category)
     {
+        int LifeCount = PlayerPrefs.GetInt("LifePref");
+        for(int i = 0; i < LifeCount; i++)
+        {
+            Debug.Log("LifeCoubt open in loop = "+LifeCount);
+            LifeBarObjectSecondPanel[i].SetActive(true);
+        }
         //BannerViewController.Instance.DestroyAd();
         Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
         selectedField = category;
@@ -280,6 +333,29 @@ public class GameManager : Singleton<GameManager>
             secondPanel.SetActive(false);
             firstPanel.SetActive(true);
             isSlider = false;
+            int LifeCount = PlayerPrefs.GetInt("LifePref", 3);
+            for (int i = 0; i <= LifeCount; i++)
+            {
+                Debug.Log("LifeCoubt close in loop = " + LifeCount);
+                LifeBarObjectSecondPanel[i].SetActive(false);
+            }
+            if (LifeCount == 2)
+            {
+                LifeBarObject[2].SetActive(false);
+                //LifeBarObject[].SetActive(false);
+            }
+            if(LifeCount == 1)
+            {
+                LifeBarObject[2].SetActive(false);
+                LifeBarObject[1].SetActive(false);
+            }
+            if(LifeCount == 0)
+            {
+                LifeBarObject[2].SetActive(false);
+                LifeBarObject[1].SetActive(false);
+                LifeBarObject[0].SetActive(false);
+            }
+
             if (quesUnlock)
             {
                 GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.GetComponent<SpriteRenderer>().color = Color.black;
