@@ -14,9 +14,9 @@ namespace GoogleMobileAds.Samples
     public class GoogleMobileAdsController : Singleton<GoogleMobileAdsController>
     {
         private static bool _isInitialized;
-        [SerializeField] private BannerViewController bannerAddController;
-        [SerializeField] private RewardedAdController RewardAddController;
-        [SerializeField] private InterstitialAdController InterstitialAddController;
+        [SerializeField] BannerViewController bannerAddController;
+        [SerializeField] RewardedAdController RewardAddController;
+        [SerializeField] InterstitialAdController InterstitialAddController;
 
         /// <summary>
         /// Initializes the MobileAds SDK

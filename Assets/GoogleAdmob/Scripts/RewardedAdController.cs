@@ -13,7 +13,6 @@ namespace GoogleMobileAds.Sample
         /// <summary>
         /// UI element activated when an ad is ready to show.
         /// </summary>
-        public GameObject AdLoadedStatus;
 
         // These ad units are configured to always serve test ads.
 #if UNITY_ANDROID
@@ -66,8 +65,6 @@ namespace GoogleMobileAds.Sample
                 // Register to ad events to extend functionality.
                 RegisterEventHandlers(ad);
 
-                // Inform the UI that the ad is ready.
-                AdLoadedStatus?.SetActive(true);
             });
         }
 
@@ -90,9 +87,6 @@ namespace GoogleMobileAds.Sample
             {
                 Debug.LogError("Rewarded ad is not ready yet.");
             }
-
-            // Inform the UI that the ad is not ready.
-            AdLoadedStatus?.SetActive(false);
         }
 
         /// <summary>
@@ -107,8 +101,6 @@ namespace GoogleMobileAds.Sample
                 _rewardedAd = null;
             }
 
-            // Inform the UI that the ad is not ready.
-            AdLoadedStatus?.SetActive(false);
         }
 
         /// <summary>

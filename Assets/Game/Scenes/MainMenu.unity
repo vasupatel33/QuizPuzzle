@@ -3328,6 +3328,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1344532972}
   - component: {fileID: 1344532971}
+  - component: {fileID: 1344532975}
+  - component: {fileID: 1344532974}
+  - component: {fileID: 1344532973}
   m_Layer: 0
   m_Name: GoogleAdmob
   m_TagString: Untagged
@@ -3348,9 +3351,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DontDestroyObjectOnLoad: 1
-  bannerAddController: {fileID: 0}
-  RewardAddController: {fileID: 0}
-  InterstitialAddController: {fileID: 0}
+  bannerAddController: {fileID: 1344532975}
+  RewardAddController: {fileID: 1344532974}
+  InterstitialAddController: {fileID: 1344532973}
 --- !u!4 &1344532972
 Transform:
   m_ObjectHideFlags: 0
@@ -3366,6 +3369,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1344532973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344532970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af99ffa6d280342d88957eca641387f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1344532974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344532970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43c35693307342f40b1f8f994d0fecd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1344532975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344532970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a2d90b8992b64e07b12ef028c0acffb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1374714420
 GameObject:
   m_ObjectHideFlags: 0
