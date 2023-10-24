@@ -160,8 +160,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 220, y: 50}
-  m_SizeDelta: {x: 250, y: 250}
+  m_AnchoredPosition: {x: 220, y: 100}
+  m_SizeDelta: {x: 240, y: 240}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &7402000
 MonoBehaviour:
@@ -848,8 +848,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 120, y: 120}
-  m_SizeDelta: {x: 250, y: 250}
+  m_AnchoredPosition: {x: 120, y: 170}
+  m_SizeDelta: {x: 240, y: 240}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &168442340
 MonoBehaviour:
@@ -1907,8 +1907,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -220, y: 50}
-  m_SizeDelta: {x: 250, y: 250}
+  m_AnchoredPosition: {x: -220, y: 100}
+  m_SizeDelta: {x: 240, y: 240}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &558031377
 MonoBehaviour:
@@ -3329,8 +3329,8 @@ GameObject:
   - component: {fileID: 1344532972}
   - component: {fileID: 1344532971}
   - component: {fileID: 1344532975}
-  - component: {fileID: 1344532974}
   - component: {fileID: 1344532973}
+  - component: {fileID: 1344532976}
   m_Layer: 0
   m_Name: GoogleAdmob
   m_TagString: Untagged
@@ -3352,7 +3352,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DontDestroyObjectOnLoad: 1
   bannerAddController: {fileID: 1344532975}
-  RewardAddController: {fileID: 1344532974}
+  RewardAddController: {fileID: 1344532976}
   InterstitialAddController: {fileID: 1344532973}
 --- !u!4 &1344532972
 Transform:
@@ -3381,18 +3381,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af99ffa6d280342d88957eca641387f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1344532974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1344532970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43c35693307342f40b1f8f994d0fecd7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1344532975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3403,6 +3391,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a2d90b8992b64e07b12ef028c0acffb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DontDestroyObjectOnLoad: 0
+--- !u!114 &1344532976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344532970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c9bc340105fc45398489acee30b431d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1374714420
@@ -4994,8 +4995,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -100.17871, y: 76.55246}
-  m_SizeDelta: {x: 250, y: 250}
+  m_AnchoredPosition: {x: -100.17871, y: 126.55246}
+  m_SizeDelta: {x: 240, y: 240}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1937795143
 MonoBehaviour:

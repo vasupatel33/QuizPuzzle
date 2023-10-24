@@ -15,7 +15,7 @@ namespace GoogleMobileAds.Samples
     {
         private static bool _isInitialized;
         [SerializeField] BannerViewController bannerAddController;
-        [SerializeField] RewardedAdController RewardAddController;
+        [SerializeField] RewardedInterstitialAdController RewardAddController;
         [SerializeField] InterstitialAdController InterstitialAddController;
 
         /// <summary>

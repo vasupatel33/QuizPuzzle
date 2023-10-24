@@ -143,7 +143,8 @@ namespace GoogleMobileAds.Sample
             ad.OnAdFullScreenContentClosed += () =>
             {
                 Debug.Log("Rewarded ad full screen content closed.");
-
+                GameManager.Instance.gameOverPanel.SetActive(false);
+                GameManager.Instance.GrantReward();
             };
             // Raised when the ad failed to open full screen content.
             ad.OnAdFullScreenContentFailed += (AdError error) =>

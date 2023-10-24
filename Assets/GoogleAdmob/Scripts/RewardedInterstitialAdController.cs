@@ -13,7 +13,7 @@ namespace GoogleMobileAds.Sample
         /// <summary>
         /// UI element activated when an ad is ready to show.
         /// </summary>
-        public GameObject AdLoadedStatus;
+        //public GameObject AdLoadedStatus;
 
         // These ad units are configured to always serve test ads.
 #if UNITY_ANDROID
@@ -69,8 +69,6 @@ namespace GoogleMobileAds.Sample
                     // Register to ad events to extend functionality.
                     RegisterEventHandlers(ad);
 
-                    // Inform the UI that the ad is ready.
-                    AdLoadedStatus?.SetActive(true);
                 });
         }
 
@@ -91,8 +89,6 @@ namespace GoogleMobileAds.Sample
                 Debug.LogError("Rewarded interstitial ad is not ready yet.");
             }
 
-            // Inform the UI that the ad is not ready.
-            AdLoadedStatus?.SetActive(false);
         }
 
         /// <summary>
@@ -106,9 +102,6 @@ namespace GoogleMobileAds.Sample
                 _rewardedInterstitialAd.Destroy();
                 _rewardedInterstitialAd = null;
             }
-
-            // Inform the UI that the ad is not ready.
-            AdLoadedStatus?.SetActive(false);
         }
 
         /// <summary>
@@ -151,6 +144,7 @@ namespace GoogleMobileAds.Sample
             ad.OnAdFullScreenContentClosed += () =>
             {
                 Debug.Log("Rewarded interstitial ad full screen content closed.");
+                GameManager.Instance.GrantReward();
             };
             // Raised when the ad failed to open full screen content.
             ad.OnAdFullScreenContentFailed += (AdError error) =>
