@@ -208,7 +208,7 @@ public class GameManager : Singleton<GameManager>
         GoogleMobileAdsController.Instance.ShowRewardAdd();
         if (quesUnlock)
         {
-            GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.GetComponent<SpriteRenderer>().color = Color.black;
+            //GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.GetComponent<SpriteRenderer>().color = Color.black;
             //GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.SetActive(false);
         }
     }
