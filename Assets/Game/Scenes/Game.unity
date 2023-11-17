@@ -292,8 +292,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -120}
-  m_SizeDelta: {x: 750, y: 160}
+  m_AnchoredPosition: {x: 9, y: -180.00562}
+  m_SizeDelta: {x: 680, y: 170}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &20564373
 MonoBehaviour:
@@ -423,10 +423,10 @@ RectTransform:
   - {fileID: 1617714567}
   m_Father: {fileID: 1871818339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 960, y: -330}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &32863911
 MonoBehaviour:
@@ -829,119 +829,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 44}
   m_SizeDelta: {x: 1920, y: 519.74}
   m_Pivot: {x: 0.5, y: 0}
---- !u!1001 &97405439
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2446715867344196392, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_Name
-      value: Gift Box Yellow Open
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.64286
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.64286
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.64286
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 1365
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 378
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2446715867344196393, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c3ef508600e0948ebb7143bd6c4d290d, type: 3}
 --- !u!1 &99594149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,10 +1072,10 @@ RectTransform:
   - {fileID: 1144453831}
   m_Father: {fileID: 1871818339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 360, y: -100}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &116040569
 MonoBehaviour:
@@ -1418,7 +1305,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: INDIAN CULTURE
+  m_text: TECHNOLOGY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -1445,7 +1332,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 57.35
+  m_fontSize: 70
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1627,7 +1514,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: GEOGRAPHY
+  m_text: SCIENCE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -1998,7 +1885,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: POLOTICS
+  m_text: GK
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -2540,7 +2427,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LOGICAL
+  m_text: INDIA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -2919,10 +2806,10 @@ RectTransform:
   - {fileID: 860306556}
   m_Father: {fileID: 1871818339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 360, y: -560}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &430777578
 MonoBehaviour:
@@ -4696,8 +4583,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 660}
-  m_SizeDelta: {x: 3069.137, y: 1211.2562}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 2108, y: 500}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &775126037
 MonoBehaviour:
@@ -4846,10 +4733,10 @@ RectTransform:
   - {fileID: 2119055100}
   m_Father: {fileID: 1871818339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1560, y: -330}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &821267038
 MonoBehaviour:
@@ -4979,10 +4866,10 @@ RectTransform:
   - {fileID: 228526683}
   m_Father: {fileID: 1871818339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 960, y: -100}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &826656698
 MonoBehaviour:
@@ -5135,7 +5022,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MATHS
+  m_text: ANIMALS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -5979,10 +5866,10 @@ RectTransform:
   - {fileID: 175162076}
   m_Father: {fileID: 1871818339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 960, y: -560}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &938570493
 MonoBehaviour:
@@ -6381,7 +6268,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: GK
+  m_text: POLITICS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -6458,119 +6345,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1093091565}
   m_CullTransparentMesh: 1
---- !u!1001 &1119818409
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.64286
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.64286
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.64286
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 1365
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 763.7143
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864480, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5205167803140864487, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
-      propertyPath: m_Name
-      value: Gift Box Yellow
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 80c7b718574bb4d888f137ab570bf6ed, type: 3}
 --- !u!1 &1123200133
 GameObject:
   m_ObjectHideFlags: 0
@@ -6779,7 +6553,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SCIENCE
+  m_text: MATHS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -6937,113 +6711,730 @@ MonoBehaviour:
   GameOverSound: {fileID: 8300000, guid: 82c6988fda75faf4f8be9203d222d276, type: 3}
   WrongAnswerSound: {fileID: 8300000, guid: 65518facabe5dc94d9f5c89034086884, type: 3}
   AllCat:
-  - CatName: Science
+  - CatName: Maths
     AllQuestion:
-    - QuestionName: 'Which one of these blood types is the rarest? '
+    - QuestionName: What is the value of Pi ?
       AllOption:
-      - OptionsName: 'A positive '
-      - OptionsName: 'O positive '
-      - OptionsName: 'B Negative '
-      - OptionsName: '  AB Negative  '
-      Answer: ' AB Negative      '
-    - QuestionName: "What does a \u2018light year\u2019 measure? "
+      - OptionsName: 2.14
+      - OptionsName: 3.24
+      - OptionsName: 6.35
+      - OptionsName: 3.14
+      Answer: 3.14
+    - QuestionName: 'If we minus 712 from 1500, how much do we get?  '
       AllOption:
-      - OptionsName: Sound
-      - OptionsName: Distance
-      - OptionsName: Speed
-      - OptionsName: Time
-      Answer: Distance
-    - QuestionName: Which is the most abundant gas in the earth's atmosphere?
+      - OptionsName: 788
+      - OptionsName: 778
+      - OptionsName: 768
+      - OptionsName: 758
+      Answer: 788
+    - QuestionName: Solve 40/8+2.
       AllOption:
-      - OptionsName: Nitrogen
-      - OptionsName: Hydrogen
-      - OptionsName: Carbon-di-oxide
-      - OptionsName: Helium
-      Answer: Nitrogen
-    - QuestionName: 'In which food will you find the most vitamin C? '
+      - OptionsName: 5
+      - OptionsName: 7
+      - OptionsName: 6
+      - OptionsName: 4
+      Answer: 7
+    - QuestionName: "What is the sum of 90 \u2013 79? "
       AllOption:
-      - OptionsName: Meat
-      - OptionsName: Fish
-      - OptionsName: Orange
-      - OptionsName: Sun Light
-      Answer: Orange
-    - QuestionName: 'What is a group of atoms called? '
+      - OptionsName: 15
+      - OptionsName: 1
+      - OptionsName: 21
+      - OptionsName: 11
+      Answer: 11
+    - QuestionName: "What is the sum of (9\xD72) \u2013 10? "
       AllOption:
-      - OptionsName: Proton
-      - OptionsName: Neutron
-      - OptionsName: Molecule
-      - OptionsName: Bond
-      Answer: Molecule
-    - QuestionName: "What is Earth\u2019s only natural satellite? "
+      - OptionsName: 28
+      - OptionsName: 8
+      - OptionsName: 18
+      - OptionsName: 5
+      Answer: 8
+    - QuestionName: 'The number of milliliters in 1 liter is '
       AllOption:
-      - OptionsName: The sun
-      - OptionsName: The moon
+      - OptionsName: 10,000
+      - OptionsName: 100
+      - OptionsName: 1000
+      - OptionsName: None Of The Above
+      Answer: 1000
+    - QuestionName: 'What is the next prime number after 5?  '
+      AllOption:
+      - OptionsName: 11
+      - OptionsName: 6
+      - OptionsName: 9
+      - OptionsName: 7
+      Answer: 7
+    - QuestionName: 'Which prime number is closest to 100? '
+      AllOption:
+      - OptionsName: 97
+      - OptionsName: 101
+      - OptionsName: 99
+      - OptionsName: 103
+      Answer: 101
+    - QuestionName: 'How many faces does a cube have? '
+      AllOption:
+      - OptionsName: 6
+      - OptionsName: 8
+      - OptionsName: 2
+      - OptionsName: 4
+      Answer: 6
+    - QuestionName: 'If the time is 2:53pm, how many minutes is it until 4:17pm? '
+      AllOption:
+      - OptionsName: 85 Miniutes
+      - OptionsName: 80 Miniutes
+      - OptionsName: 60 Minutes
+      - OptionsName: 84 Miniutes
+      Answer: 84 Miniutes
+    - QuestionName: 'What is the square root of 1? '
+      AllOption:
+      - OptionsName: 0
+      - OptionsName: 1
+      - OptionsName: 2
+      - OptionsName: None Of the Above
+      Answer: 1
+    - QuestionName: 'What is half of one half? '
+      AllOption:
+      - OptionsName: 0.50
+      - OptionsName: 1.25
+      - OptionsName: 1
+      - OptionsName: 0.25
+      Answer: 0.25
+    - QuestionName: 'Turn 4/12 into a percentage  '
+      AllOption:
+      - OptionsName: 50%
+      - OptionsName: 25%
+      - OptionsName: 33%
+      - OptionsName: 75%
+      Answer: 33%
+    - QuestionName: 'How much is 1% of 1?  '
+      AllOption:
+      - OptionsName: 0.01
+      - OptionsName: 1
+      - OptionsName: 0.5
+      - OptionsName: 100
+      Answer: 0.01
+    - QuestionName: If I pay $2.14 for a bag of rice and then sell it on for $3,
+        how much profit have I made?
+      AllOption:
+      - OptionsName: $0.34
+      - OptionsName: $0.76
+      - OptionsName: $5.14
+      - OptionsName: None Of The Above
+      Answer: None Of The Above
+  - CatName: Logical
+    AllQuestion:
+    - QuestionName: How many hair in human Body ?
+      AllOption:
+      - OptionsName: 2 Lakh
+      - OptionsName: 5 Lakh
+      - OptionsName: 20 Lakh
+      - OptionsName: Not Countable
+      Answer: Not Countable
+    - QuestionName: What is the square root of 144?
+      AllOption:
+      - OptionsName: 14
+      - OptionsName: 12
+      - OptionsName: 16
+      - OptionsName: 10
+      Answer: 12
+    - QuestionName: How many zeros until 10 ?
+      AllOption:
+      - OptionsName: 1
+      - OptionsName: 2
+      - OptionsName: 3
+      - OptionsName: 4
+      Answer: 2
+    - QuestionName: What is the smallest prime number greater than 10?
+      AllOption:
+      - OptionsName: 11
+      - OptionsName: 12
+      - OptionsName: 13
+      - OptionsName: 14
+      Answer: 11
+    - QuestionName: 'What is taken before you can get it? '
+      AllOption:
+      - OptionsName: Price
+      - OptionsName: Picture
+      - OptionsName: Gift
+      - OptionsName: None Of These
+      Answer: Picture
+    - QuestionName: How long is the answer to this question?
+      AllOption:
+      - OptionsName: Answer
+      - OptionsName: How long
+      - OptionsName: Very Lon
+      - OptionsName: Short
+      Answer: How long
+    - QuestionName: You are my Brother But I am not your Brother Who I Am?
+      AllOption:
+      - OptionsName: Brother
+      - OptionsName: Father
+      - OptionsName: Sister
+      - OptionsName: Mother
+      Answer: Sister
+    - QuestionName: Which of following is not type of Mobile Company ?
+      AllOption:
+      - OptionsName: Redmi
+      - OptionsName: Samsung
+      - OptionsName: Vivo
+      - OptionsName: Amazon
+      Answer: Amazon
+    - QuestionName: Tomorrow's yesterday. Yesterday's tomorrow. What is it?
+      AllOption:
+      - OptionsName: Today
+      - OptionsName: Yesterday
+      - OptionsName: Tomorrow
+      - OptionsName: None Of These
+      Answer: Today
+    - QuestionName: What is the largest planet in our solar system?
+      AllOption:
+      - OptionsName: Earth
       - OptionsName: Mars
       - OptionsName: Jupiter
-      Answer: The moon
-    - QuestionName: 'Which nutrient plays an essential role in muscle-building?  '
+      - OptionsName: Saturn
+      Answer: Jupiter
+    - QuestionName: What can you keep after giving it to someone?
       AllOption:
-      - OptionsName: Protein
-      - OptionsName: Carbohydrate
-      - OptionsName: Iron
-      - OptionsName: Fat
-      Answer: Protein
-    - QuestionName: 'Which scientist proposed the three laws of motion?  '
+      - OptionsName: Nothing
+      - OptionsName: Wishes
+      - OptionsName: Money
+      - OptionsName: Your word
+      Answer: Your word
+  - CatName: Animals
+    AllQuestion:
+    - QuestionName: 'What is the fastest land animal? '
       AllOption:
-      - OptionsName: Isaac Newton
-      - OptionsName: Thomas Alva Edison
-      - OptionsName: Albert Einstein
-      - OptionsName: Stephen Hawking
-      Answer: Isaac Newton
-    - QuestionName: 'Which system of the body controls the senses?  '
+      - OptionsName: Lion
+      - OptionsName: Cheetah
+      - OptionsName: Ostrich
+      - OptionsName: Tiger
+      Answer: Cheetah
+    - QuestionName: Which land animal has the biggest eyes?
       AllOption:
-      - OptionsName: Circulatory system
-      - OptionsName: Digestive system
-      - OptionsName: Nervous system
-      - OptionsName: Skeletal system
-      Answer: Nervous system
-    - QuestionName: 'Which is the largest animal on earth?  '
-      AllOption:
-      - OptionsName: Shark
       - OptionsName: Elephant
-      - OptionsName: Blue whale
-      - OptionsName: Giraffe
-      Answer: Blue whale
-    - QuestionName: 'Who invented periodic table? '
+      - OptionsName: Lion
+      - OptionsName: Horse
+      - OptionsName: Ostrich
+      Answer: Ostrich
+    - QuestionName: 'What is the national bird of India?  '
       AllOption:
-      - OptionsName: Dmitri Mendeleev
-      - OptionsName: David Joseph
-      - OptionsName: Rinky Martin
-      - OptionsName: Newton
-      Answer: Dmitri Mendeleev
-    - QuestionName: Rate Our Game by Star by Your Experience.
+      - OptionsName: Peacock
+      - OptionsName: Kangaroo
+      - OptionsName: Lion
+      - OptionsName: Tiger
+      Answer: Peacock
+    - QuestionName: 'Which animal can clean its ears with its 18-inch-long tongue?  '
       AllOption:
-      - OptionsName: 2 Star
-      - OptionsName: 4 Star
-      - OptionsName: 1 Star
-      - OptionsName: 3 Star
-      Answer: 4 Star
-    - QuestionName: 'Which of the following is NOT a form of carbon?  '
+      - OptionsName: crocodile
+      - OptionsName: giraffe
+      - OptionsName: zebra
+      - OptionsName: kangaroo
+      Answer: giraffe
+    - QuestionName: "What\u2019s the name of the largest snake in the world? "
       AllOption:
-      - OptionsName: Diamond
-      - OptionsName: Graphite
-      - OptionsName: Amorphous carbon
-      - OptionsName: Ferrite
-      Answer: Ferrite
-    - QuestionName: 'Which is the lightest element in the periodic table?  '
+      - OptionsName: Cold-blooded
+      - OptionsName: Chameleon
+      - OptionsName: snout
+      - OptionsName: Anaconda
+      Answer: Anaconda
+    - QuestionName: "What animal is known to be \"man\u2019s best friend\"? "
       AllOption:
-      - OptionsName: Helium
-      - OptionsName: Carbon
-      - OptionsName: Nitrogen
-      - OptionsName: Hydrogen
-      Answer: Hydrogen
-    - QuestionName: 'With which polymer, the cabinets of radio and TV made of? '
+      - OptionsName: Dog
+      - OptionsName: Panda
+      - OptionsName: Kangaroo
+      - OptionsName: Horse
+      Answer: Dog
+    - QuestionName: 'How many legs are there in a mosquito?  '
       AllOption:
-      - OptionsName: Polystyrene
-      - OptionsName: Polythene
-      - OptionsName: Nylon
-      - OptionsName: Teri cot
-      Answer: Polystyrene
+      - OptionsName: Four
+      - OptionsName: Ten
+      - OptionsName: Six
+      - OptionsName: Five
+      Answer: Six
+    - QuestionName: 'What is the tallest bird in the world? '
+      AllOption:
+      - OptionsName: Penguins
+      - OptionsName: Pelicans
+      - OptionsName: Swans
+      - OptionsName: Ostrich
+      Answer: Ostrich
+    - QuestionName: 'Which bird is known to be the fastest bird? '
+      AllOption:
+      - OptionsName: Lion
+      - OptionsName: Pigeon
+      - OptionsName: Falcon
+      - OptionsName: Crow
+      Answer: Falcon
+    - QuestionName: 'Which insect can lift up to 50 times its body weight? '
+      AllOption:
+      - OptionsName: Ant
+      - OptionsName: Elephant
+      - OptionsName: Horse
+      - OptionsName: Leopard
+      Answer: Ant
+    - QuestionName: 'How many stomachs do cows have?  '
+      AllOption:
+      - OptionsName: Three
+      - OptionsName: Five
+      - OptionsName: Four
+      - OptionsName: Ten
+      Answer: Four
+    - QuestionName: 'What bird can rotate its head up to 270 degrees? '
+      AllOption:
+      - OptionsName: Peacock
+      - OptionsName: Parrot
+      - OptionsName: Owl
+      - OptionsName: Pegions
+      Answer: Owl
+    - QuestionName: "What are the only mammals that can\u2019t jump?  "
+      AllOption:
+      - OptionsName: Lion
+      - OptionsName: Hippopotamus
+      - OptionsName: Flamingo
+      - OptionsName: Elephants
+      Answer: Elephants
+    - QuestionName: 'What creature can make a sound louder than a jet engine? '
+      AllOption:
+      - OptionsName: Tiger
+      - OptionsName: Blue Whale
+      - OptionsName: Elephant
+      - OptionsName: Leopard
+      Answer: Blue Whale
+    - QuestionName: 'What is the fastest water animal?  '
+      AllOption:
+      - OptionsName: Porpoise
+      - OptionsName: Tuna
+      - OptionsName: Flying fish
+      - OptionsName: Sailfish
+      Answer: Sailfish
+  - CatName: GK
+    AllQuestion:
+    - QuestionName: 'How many players are there in a cricket team?  '
+      AllOption:
+      - OptionsName: 5
+      - OptionsName: 9
+      - OptionsName: 15
+      - OptionsName: 11
+      Answer: 11
+    - QuestionName: 'Who is the Father of our Nation?  '
+      AllOption:
+      - OptionsName: Mahatma Gandhi
+      - OptionsName: Narerndra Modi
+      - OptionsName: APJ Abdul Kalam
+      - OptionsName: Dr. Rajendra Prasad
+      Answer: Mahatma Gandhi
+    - QuestionName: 'How many letters are there in the English alphabet?  '
+      AllOption:
+      - OptionsName: 22 letters
+      - OptionsName: 26 letters
+      - OptionsName: 36 letters
+      - OptionsName: 28 letters
+      Answer: 26 letters
+    - QuestionName: Which is Capital of India?
+      AllOption:
+      - OptionsName: New Delhi
+      - OptionsName: Mumbai
+      - OptionsName: Bengaluru
+      - OptionsName: Surat
+      Answer: New Delhi
+    - QuestionName: "How many colours are there in India\u2019s National Flag? "
+      AllOption:
+      - OptionsName: Three
+      - OptionsName: One
+      - OptionsName: Four
+      - OptionsName: Five
+      Answer: Three
+    - QuestionName: 'What is the tallest mountain in the world?  '
+      AllOption:
+      - OptionsName: Himalaya
+      - OptionsName: Mount Everest
+      - OptionsName: Kangchenjunga
+      - OptionsName: Annapurna
+      Answer: Mount Everest
+    - QuestionName: 1 MB is equal to how many kb ?
+      AllOption:
+      - OptionsName: 1200
+      - OptionsName: 1024
+      - OptionsName: 1000
+      - OptionsName: 1044
+      Answer: 1024
+    - QuestionName: 'Who was the first person to walk on the moon?  '
+      AllOption:
+      - OptionsName: Neil Armstrong
+      - OptionsName: Buzz Aldrin
+      - OptionsName: Yuri Gagarin
+      - OptionsName: Alan Shepard
+      Answer: Neil Armstrong
+    - QuestionName: National Tree of India is?
+      AllOption:
+      - OptionsName: Sherman Tree
+      - OptionsName: Coconut Tree
+      - OptionsName: Banyan tree
+      - OptionsName: Mango Tree
+      Answer: Banyan tree
+    - QuestionName: 'Which is largest desert in the world?  '
+      AllOption:
+      - OptionsName: KALAHARI
+      - OptionsName: GOBI
+      - OptionsName: TAKLAMAKAN
+      - OptionsName: SAHARA
+      Answer: SAHARA
+    - QuestionName: 'In which direction does the sun rise? '
+      AllOption:
+      - OptionsName: North
+      - OptionsName: South
+      - OptionsName: East
+      - OptionsName: None Of These
+      Answer: East
+    - QuestionName: Which jungle is the Largest in the world?
+      AllOption:
+      - OptionsName: Amazon Forest
+      - OptionsName: Sahara
+      - OptionsName: Western Forest
+      - OptionsName: Atlantic Forest
+      Answer: Amazon Forest
+    - QuestionName: A figure with 8 sides is called?
+      AllOption:
+      - OptionsName: Octagon
+      - OptionsName: Hexagon
+      - OptionsName: Peltagon
+      - OptionsName: Nopalton
+      Answer: Octagon
+    - QuestionName: 'Who is the founder of Microsoft?  '
+      AllOption:
+      - OptionsName: Mark Zuckerbug
+      - OptionsName: Mukesh Ambani
+      - OptionsName: Bill Gates
+      - OptionsName: Salman Khan
+      Answer: Bill Gates
+    - QuestionName: Highest dam of India is?
+      AllOption:
+      - OptionsName: Hirakud Dam
+      - OptionsName: Bhakhra Dam
+      - OptionsName: Sardar Sarovar Dam
+      - OptionsName: Tehri Dam
+      Answer: Tehri Dam
+  - CatName: Geography
+    AllQuestion:
+    - QuestionName: 'Which country is Taj Mahal in?  '
+      AllOption:
+      - OptionsName: India
+      - OptionsName: Australia
+      - OptionsName: Spain
+      - OptionsName: Europe
+      Answer: India
+    - QuestionName: "In which city is the world\u2019s tallest building located? "
+      AllOption:
+      - OptionsName: Pakistan
+      - OptionsName: Canada
+      - OptionsName: Japan
+      - OptionsName: Dubai
+      Answer: Dubai
+    - QuestionName: How many spokes in ashok chakra
+      AllOption:
+      - OptionsName: 20
+      - OptionsName: 24
+      - OptionsName: 22
+      - OptionsName: 26
+      Answer: 24
+    - QuestionName: 'Which is the coldest place on Earth?  '
+      AllOption:
+      - OptionsName: India
+      - OptionsName: Japan
+      - OptionsName: Antarctica
+      - OptionsName: USA
+      Answer: Antarctica
+    - QuestionName: 'In which country is the Great Pyramid of Giza located? '
+      AllOption:
+      - OptionsName: Egypt
+      - OptionsName: Canada
+      - OptionsName: Pakistan
+      - OptionsName: Russia
+      Answer: Egypt
+    - QuestionName: 'Which city in India is called the Pink City?  '
+      AllOption:
+      - OptionsName: Mumbai
+      - OptionsName: Delhi
+      - OptionsName: Bengaluru
+      - OptionsName: Jaipur
+      Answer: Jaipur
+    - QuestionName: 'What is the largest ocean in the world? '
+      AllOption:
+      - OptionsName: Arctic Ocean
+      - OptionsName: Antlantic Ocean
+      - OptionsName: Pacific Ocean
+      - OptionsName: None Of These
+      Answer: Pacific Ocean
+    - QuestionName: "What is India\u2019s official language?  "
+      AllOption:
+      - OptionsName: Punjabi
+      - OptionsName: Hindi
+      - OptionsName: English
+      - OptionsName: Gujarati
+      Answer: Hindi
+    - QuestionName: What is the capital of England?
+      AllOption:
+      - OptionsName: Africa
+      - OptionsName: London
+      - OptionsName: Ottawa
+      - OptionsName: San Francisco
+      Answer: London
+    - QuestionName: 'What is the capital city of America?  '
+      AllOption:
+      - OptionsName: Jakarta
+      - OptionsName: San Fransinco
+      - OptionsName: Washington, D.C
+      - OptionsName: New York
+      Answer: Washington, D.C
+    - QuestionName: "How much of the Earth\u2019s surface is covered by the ocean?"
+      AllOption:
+      - OptionsName: 10
+      - OptionsName: 90
+      - OptionsName: 30
+      - OptionsName: 70
+      Answer: 70
+    - QuestionName: What is the capital of Canada?
+      AllOption:
+      - OptionsName: Edmonton
+      - OptionsName: Montreal
+      - OptionsName: Ottawa
+      - OptionsName: Calgary
+      Answer: Ottawa
+    - QuestionName: 'Which is the longest river in the world?  '
+      AllOption:
+      - OptionsName: Mississippi River
+      - OptionsName: Yellow River
+      - OptionsName: The Nile River
+      - OptionsName: None of these
+      Answer: The Nile River
+    - QuestionName: 'What is the hottest continent on Earth? '
+      AllOption:
+      - OptionsName: Africa
+      - OptionsName: Asia
+      - OptionsName: Turkey
+      - OptionsName: USA
+      Answer: Africa
+    - QuestionName: 'Which country is called the Land of Rising Sun? '
+      AllOption:
+      - OptionsName: Japan
+      - OptionsName: Brazil
+      - OptionsName: China
+      - OptionsName: German
+      Answer: Japan
+  - CatName: Technology
+    AllQuestion:
+    - QuestionName: 'Which of these is a search engine? '
+      AllOption:
+      - OptionsName: FTP
+      - OptionsName: Google
+      - OptionsName: Archie
+      - OptionsName: ARPANET
+      Answer: Google
+    - QuestionName: 'One component of the motherboard is: '
+      AllOption:
+      - OptionsName: Processor
+      - OptionsName: Bios
+      - OptionsName: Computer Chip
+      - OptionsName: Transistor
+      Answer: Processor
+    - QuestionName: 'What is the most widely used web browser as of 2021? '
+      AllOption:
+      - OptionsName: Safari
+      - OptionsName: Firefox
+      - OptionsName: Chrome
+      - OptionsName: Internet Explorer
+      Answer: Chrome
+    - QuestionName: 'Which video-sharing platform is owned by Google? '
+      AllOption:
+      - OptionsName: Vimeo
+      - OptionsName: Dailymotion
+      - OptionsName: YouTube
+      - OptionsName: Twitch
+      Answer: YouTube
+    - QuestionName: 'What is Wi-Fi short for?  '
+      AllOption:
+      - OptionsName: Wireless Fiber
+      - OptionsName: Wireless Fidelity
+      - OptionsName: Wireless Framework
+      - OptionsName: Wireless Functionality
+      Answer: Wireless Fidelity
+    - QuestionName: 'What is the main purpose of a QR code? '
+      AllOption:
+      - OptionsName: Encrypting data
+      - OptionsName: Quick Response
+      - OptionsName: 'Storing files '
+      - OptionsName: Quickly Retrieving Data
+      Answer: Quickly Retrieving Data
+    - QuestionName: 'Computers calculate numbers in what mode? '
+      AllOption:
+      - OptionsName: Decimal
+      - OptionsName: Octal
+      - OptionsName: Binary
+      - OptionsName: None of the above
+      Answer: Binary
+    - QuestionName: 'Which of the following is not a programming language? '
+      AllOption:
+      - OptionsName: C
+      - OptionsName: Java
+      - OptionsName: Turing
+      - OptionsName: C#
+      Answer: Turing
+    - QuestionName: What is used to convert electrical energy to sound energy?
+      AllOption:
+      - OptionsName: Loud speaker
+      - OptionsName: Microphone
+      - OptionsName: Radio transmitter
+      - OptionsName: Radio receiver
+      Answer: Loud speaker
+    - QuestionName: 'Which company produces the popular video game console, PlayStation? '
+      AllOption:
+      - OptionsName: Nintendo
+      - OptionsName: Microsoft
+      - OptionsName: Sony
+      - OptionsName: Sega
+      Answer: Sony
+    - QuestionName: 'Which is not an internet protocol? '
+      AllOption:
+      - OptionsName: HTTP
+      - OptionsName: FTP
+      - OptionsName: STP
+      - OptionsName: IP
+      Answer: STP
+    - QuestionName: 'What is the primary function of a firewall in network security?  '
+      AllOption:
+      - OptionsName: Virus scanning
+      - OptionsName: Intrusion detection
+      - OptionsName: Data encryption
+      - OptionsName: To block unauthorized access
+      Answer: To block unauthorized access
+    - QuestionName: Which of the Following type of plastic ?
+      AllOption:
+      - OptionsName: Polyesther
+      - OptionsName: Thermoset
+      - OptionsName: Polyplastic
+      - OptionsName: Latex
+      Answer: Thermoset
+    - QuestionName: Natural rubber is made from a milky liquid called
+      AllOption:
+      - OptionsName: Plasticine
+      - OptionsName: Solution
+      - OptionsName: Electrolyte
+      - OptionsName: Latex
+      Answer: Latex
+    - QuestionName: The two types of electrical currents are
+      AllOption:
+      - OptionsName: Direct and Alternating
+      - OptionsName: Natural and Artificial
+      - OptionsName: Hydro and Coal
+      - OptionsName: Direct and Indirect
+      Answer: Direct and Alternating
+  - CatName: Politics
+    AllQuestion:
+    - QuestionName: How many times national emergency has been imposed in India after
+        independence?
+      AllOption:
+      - OptionsName: Once
+      - OptionsName: Twice
+      - OptionsName: Thrice
+      - OptionsName: Four Times
+      Answer: Thrice
+    - QuestionName: What is duration of Post of Prime Minister?
+      AllOption:
+      - OptionsName: 5 Years
+      - OptionsName: 10 Years
+      - OptionsName: 4 Years
+      - OptionsName: 7 Years
+      Answer: 5 Years
+    - QuestionName: " Total number of High Courts in India is\t"
+      AllOption:
+      - OptionsName: 25
+      - OptionsName: 15
+      - OptionsName: 35
+      - OptionsName: 56
+      Answer: 25
+    - QuestionName: 'When was the first general election to the Lok Sabha held?  '
+      AllOption:
+      - OptionsName: 1972
+      - OptionsName: 1945
+      - OptionsName: 1952
+      - OptionsName: 1960
+      Answer: 1952
+    - QuestionName: 'By whom is the budget passed first? '
+      AllOption:
+      - OptionsName: Rajya Sabha
+      - OptionsName: Lok Sabha
+      - OptionsName: both (A) and (B)
+      - OptionsName: none of these
+      Answer: Lok Sabha
+    - QuestionName: 'How many times the same person can be made the President of
+        India? '
+      AllOption:
+      - OptionsName: many times
+      - OptionsName: twice
+      - OptionsName: three times
+      - OptionsName: only once
+      Answer: many times
+    - QuestionName: 'Whose prior approval is necessary for the finance bill? '
+      AllOption:
+      - OptionsName: Finance Minister
+      - OptionsName: Prime Minister
+      - OptionsName: President
+      - OptionsName: none
+      Answer: President
+    - QuestionName: "What is the minimum age for holding office in the Lok Sabha?\t"
+      AllOption:
+      - OptionsName: 18 Years
+      - OptionsName: 20 Years
+      - OptionsName: 35 Years
+      - OptionsName: 25 Years
+      Answer: 25 Years
+    - QuestionName: 'The Chairman of the Planning Commission is '
+      AllOption:
+      - OptionsName: Prime Minister
+      - OptionsName: Minister of Planning
+      - OptionsName: Chief Minister
+      - OptionsName: President
+      Answer: Prime Minister
+    - QuestionName: 'When is World Environment Day celebrated? '
+      AllOption:
+      - OptionsName: 5th April
+      - OptionsName: 5th March
+      - OptionsName: 5th May
+      - OptionsName: 5 June
+      Answer: 5 June
+    - QuestionName: 'The Prime Minister is- '
+      AllOption:
+      - OptionsName: head of the state
+      - OptionsName: head of government
+      - OptionsName: head of home
+      - OptionsName: None of the above
+      Answer: head of government
+    - QuestionName: 'What is required to make a Bill into law? '
+      AllOption:
+      - OptionsName: Passing in Lok Sabha
+      - OptionsName: Passing in Rajya Sabha
+      - OptionsName: To be signed by the President
+      - OptionsName: All of the above
+      Answer: All of the above
+    - QuestionName: 'Who is the founder of BJP? '
+      AllOption:
+      - OptionsName: Narendra Modi
+      - OptionsName: Sushma Swaraj
+      - OptionsName: Atal Bihar Vajpayee
+      - OptionsName: Amit Shah
+      Answer: Atal Bihar Vajpayee
+    - QuestionName: 'Which veto power does the President of India have? '
+      AllOption:
+      - OptionsName: Suspended Prohibition
+      - OptionsName: Complete prohibition
+      - OptionsName: Pocket
+      - OptionsName: All these
+      Answer: All these
+    - QuestionName: 'National Voters'' Day is celebrated in India on? '
+      AllOption:
+      - OptionsName: 25 November
+      - OptionsName: 25 September
+      - OptionsName: 25 January
+      - OptionsName: 25 March
+      Answer: 25 January
   - CatName: Economics
     AllQuestion:
     - QuestionName: 'Which city has been called the financial capital of India? '
@@ -7154,330 +7545,113 @@ MonoBehaviour:
       - OptionsName: Payment
       - OptionsName: Writing and editing
       Answer: Writing and editing
-  - CatName: Maths
+  - CatName: Science
     AllQuestion:
-    - QuestionName: What is the value of Pi ?
+    - QuestionName: 'Which one of these blood types is the rarest? '
       AllOption:
-      - OptionsName: 2.14
-      - OptionsName: 3.24
-      - OptionsName: 6.35
-      - OptionsName: 3.14
-      Answer: 3.14
-    - QuestionName: 'If we minus 712 from 1500, how much do we get?  '
+      - OptionsName: 'A positive '
+      - OptionsName: 'O positive '
+      - OptionsName: 'B Negative '
+      - OptionsName: '  AB Negative  '
+      Answer: ' AB Negative      '
+    - QuestionName: "What does a \u2018light year\u2019 measure? "
       AllOption:
-      - OptionsName: 788
-      - OptionsName: 778
-      - OptionsName: 768
-      - OptionsName: 758
-      Answer: 788
-    - QuestionName: Solve 40/8+2.
+      - OptionsName: Sound
+      - OptionsName: Distance
+      - OptionsName: Speed
+      - OptionsName: Time
+      Answer: Distance
+    - QuestionName: Which is the most abundant gas in the earth's atmosphere?
       AllOption:
-      - OptionsName: 5
-      - OptionsName: 7
-      - OptionsName: 6
-      - OptionsName: 4
-      Answer: 7
-    - QuestionName: "What is the sum of 90 \u2013 79? "
+      - OptionsName: Nitrogen
+      - OptionsName: Hydrogen
+      - OptionsName: Carbon-di-oxide
+      - OptionsName: Helium
+      Answer: Nitrogen
+    - QuestionName: 'In which food will you find the most vitamin C? '
       AllOption:
-      - OptionsName: 15
-      - OptionsName: 1
-      - OptionsName: 21
-      - OptionsName: 11
-      Answer: 11
-    - QuestionName: "What is the sum of (9\xD72) \u2013 10? "
+      - OptionsName: Meat
+      - OptionsName: Fish
+      - OptionsName: Orange
+      - OptionsName: Sun Light
+      Answer: Orange
+    - QuestionName: 'What is a group of atoms called? '
       AllOption:
-      - OptionsName: 28
-      - OptionsName: 8
-      - OptionsName: 18
-      - OptionsName: 5
-      Answer: 8
-    - QuestionName: 'The number of milliliters in 1 liter is '
+      - OptionsName: Proton
+      - OptionsName: Neutron
+      - OptionsName: Molecule
+      - OptionsName: Bond
+      Answer: Molecule
+    - QuestionName: "What is Earth\u2019s only natural satellite? "
       AllOption:
-      - OptionsName: 10,000
-      - OptionsName: 100
-      - OptionsName: 1000
-      - OptionsName: None Of The Above
-      Answer: 1000
-    - QuestionName: 'What is the next prime number after 5?  '
+      - OptionsName: The sun
+      - OptionsName: The moon
+      - OptionsName: Mars
+      - OptionsName: Jupiter
+      Answer: The moon
+    - QuestionName: 'Which nutrient plays an essential role in muscle-building?  '
       AllOption:
-      - OptionsName: 11
-      - OptionsName: 6
-      - OptionsName: 9
-      - OptionsName: 7
-      Answer: 7
-    - QuestionName: 'Which prime number is closest to 100? '
+      - OptionsName: Protein
+      - OptionsName: Carbohydrate
+      - OptionsName: Iron
+      - OptionsName: Fat
+      Answer: Protein
+    - QuestionName: 'Which scientist proposed the three laws of motion?  '
       AllOption:
-      - OptionsName: 97
-      - OptionsName: 101
-      - OptionsName: 99
-      - OptionsName: 103
-      Answer: 101
-    - QuestionName: 'How many faces does a cube have? '
+      - OptionsName: Isaac Newton
+      - OptionsName: Thomas Alva Edison
+      - OptionsName: Albert Einstein
+      - OptionsName: Stephen Hawking
+      Answer: Isaac Newton
+    - QuestionName: 'Which system of the body controls the senses?  '
       AllOption:
-      - OptionsName: 6
-      - OptionsName: 8
-      - OptionsName: 2
-      - OptionsName: 4
-      Answer: 6
-    - QuestionName: 'If the time is 2:53pm, how many minutes is it until 4:17pm? '
+      - OptionsName: Circulatory system
+      - OptionsName: Digestive system
+      - OptionsName: Nervous system
+      - OptionsName: Skeletal system
+      Answer: Nervous system
+    - QuestionName: 'Which is the largest animal on earth?  '
       AllOption:
-      - OptionsName: 85 Miniutes
-      - OptionsName: 80 Miniutes
-      - OptionsName: 60 Minutes
-      - OptionsName: 84 Miniutes
-      Answer: 84 Miniutes
-    - QuestionName: 'What is the square root of 1? '
+      - OptionsName: Shark
+      - OptionsName: Elephant
+      - OptionsName: Blue whale
+      - OptionsName: Giraffe
+      Answer: Blue whale
+    - QuestionName: 'Who invented periodic table? '
       AllOption:
-      - OptionsName: 0
-      - OptionsName: 1
-      - OptionsName: 2
-      - OptionsName: None Of the Above
-      Answer: 1
-    - QuestionName: 'What is half of one half? '
+      - OptionsName: Dmitri Mendeleev
+      - OptionsName: David Joseph
+      - OptionsName: Rinky Martin
+      - OptionsName: Newton
+      Answer: Dmitri Mendeleev
+    - QuestionName: Rate Our Game by Star by Your Experience.
       AllOption:
-      - OptionsName: 0.50
-      - OptionsName: 1.25
-      - OptionsName: 1
-      - OptionsName: 0.25
-      Answer: 0.25
-    - QuestionName: 'Turn 4/12 into a percentage  '
+      - OptionsName: 2 Star
+      - OptionsName: 4 Star
+      - OptionsName: 1 Star
+      - OptionsName: 3 Star
+      Answer: 4 Star
+    - QuestionName: 'Which of the following is NOT a form of carbon?  '
       AllOption:
-      - OptionsName: 50%
-      - OptionsName: 25%
-      - OptionsName: 33%
-      - OptionsName: 75%
-      Answer: 33%
-    - QuestionName: 'How much is 1% of 1?  '
+      - OptionsName: Diamond
+      - OptionsName: Graphite
+      - OptionsName: Amorphous carbon
+      - OptionsName: Ferrite
+      Answer: Ferrite
+    - QuestionName: 'Which is the lightest element in the periodic table?  '
       AllOption:
-      - OptionsName: 0.01
-      - OptionsName: 1
-      - OptionsName: 0.5
-      - OptionsName: 100
-      Answer: 0.01
-    - QuestionName: If I pay $2.14 for a bag of rice and then sell it on for $3,
-        how much profit have I made?
+      - OptionsName: Helium
+      - OptionsName: Carbon
+      - OptionsName: Nitrogen
+      - OptionsName: Hydrogen
+      Answer: Hydrogen
+    - QuestionName: 'With which polymer, the cabinets of radio and TV made of? '
       AllOption:
-      - OptionsName: $0.34
-      - OptionsName: $0.76
-      - OptionsName: $5.14
-      - OptionsName: None Of The Above
-      Answer: None Of The Above
-  - CatName: Politics
-    AllQuestion:
-    - QuestionName: How many times national emergency has been imposed in India after
-        independence?
-      AllOption:
-      - OptionsName: Once
-      - OptionsName: Twice
-      - OptionsName: Thrice
-      - OptionsName: Four Times
-      Answer: Thrice
-    - QuestionName: What is duration of Post of Prime Minister?
-      AllOption:
-      - OptionsName: 5 Years
-      - OptionsName: 10 Years
-      - OptionsName: 4 Years
-      - OptionsName: 7 Years
-      Answer: 5 Years
-    - QuestionName: " Total number of High Courts in India is\t"
-      AllOption:
-      - OptionsName: 25
-      - OptionsName: 15
-      - OptionsName: 35
-      - OptionsName: 56
-      Answer: 25
-    - QuestionName: 'When was the first general election to the Lok Sabha held?  '
-      AllOption:
-      - OptionsName: 1972
-      - OptionsName: 1945
-      - OptionsName: 1952
-      - OptionsName: 1960
-      Answer: 1952
-    - QuestionName: 'By whom is the budget passed first? '
-      AllOption:
-      - OptionsName: Rajya Sabha
-      - OptionsName: Lok Sabha
-      - OptionsName: both (A) and (B)
-      - OptionsName: none of these
-      Answer: Lok Sabha
-    - QuestionName: 'How many times the same person can be made the President of
-        India? '
-      AllOption:
-      - OptionsName: many times
-      - OptionsName: twice
-      - OptionsName: three times
-      - OptionsName: only once
-      Answer: many times
-    - QuestionName: 'Whose prior approval is necessary for the finance bill? '
-      AllOption:
-      - OptionsName: Finance Minister
-      - OptionsName: Prime Minister
-      - OptionsName: President
-      - OptionsName: none
-      Answer: President
-    - QuestionName: "What is the minimum age for holding office in the Lok Sabha?\t"
-      AllOption:
-      - OptionsName: 18 Years
-      - OptionsName: 20 Years
-      - OptionsName: 35 Years
-      - OptionsName: 25 Years
-      Answer: 25 Years
-    - QuestionName: 'The Chairman of the Planning Commission is '
-      AllOption:
-      - OptionsName: Prime Minister
-      - OptionsName: Minister of Planning
-      - OptionsName: Chief Minister
-      - OptionsName: President
-      Answer: Prime Minister
-    - QuestionName: 'When is World Environment Day celebrated? '
-      AllOption:
-      - OptionsName: 5th April
-      - OptionsName: 5th March
-      - OptionsName: 5th May
-      - OptionsName: 5 June
-      Answer: 5 June
-    - QuestionName: 'The Prime Minister is- '
-      AllOption:
-      - OptionsName: head of the state
-      - OptionsName: head of government
-      - OptionsName: head of home
-      - OptionsName: None of the above
-      Answer: head of government
-    - QuestionName: 'What is required to make a Bill into law? '
-      AllOption:
-      - OptionsName: Passing in Lok Sabha
-      - OptionsName: Passing in Rajya Sabha
-      - OptionsName: To be signed by the President
-      - OptionsName: All of the above
-      Answer: All of the above
-    - QuestionName: 'Who is the founder of BJP? '
-      AllOption:
-      - OptionsName: Narendra Modi
-      - OptionsName: Sushma Swaraj
-      - OptionsName: Atal Bihar Vajpayee
-      - OptionsName: Amit Shah
-      Answer: Atal Bihar Vajpayee
-    - QuestionName: 'Which veto power does the President of India have? '
-      AllOption:
-      - OptionsName: Suspended Prohibition
-      - OptionsName: Complete prohibition
-      - OptionsName: Pocket
-      - OptionsName: All these
-      Answer: All these
-    - QuestionName: 'National Voters'' Day is celebrated in India on? '
-      AllOption:
-      - OptionsName: 25 November
-      - OptionsName: 25 September
-      - OptionsName: 25 January
-      - OptionsName: 25 March
-      Answer: 25 January
-  - CatName: Technology
-    AllQuestion:
-    - QuestionName: 'Which of these is a search engine? '
-      AllOption:
-      - OptionsName: FTP
-      - OptionsName: Google
-      - OptionsName: Archie
-      - OptionsName: ARPANET
-      Answer: Google
-    - QuestionName: 'One component of the motherboard is: '
-      AllOption:
-      - OptionsName: Processor
-      - OptionsName: Bios
-      - OptionsName: Computer Chip
-      - OptionsName: Transistor
-      Answer: Processor
-    - QuestionName: 'What is the most widely used web browser as of 2021? '
-      AllOption:
-      - OptionsName: Safari
-      - OptionsName: Firefox
-      - OptionsName: Chrome
-      - OptionsName: Internet Explorer
-      Answer: Chrome
-    - QuestionName: 'Which video-sharing platform is owned by Google? '
-      AllOption:
-      - OptionsName: Vimeo
-      - OptionsName: Dailymotion
-      - OptionsName: YouTube
-      - OptionsName: Twitch
-      Answer: YouTube
-    - QuestionName: 'What is Wi-Fi short for?  '
-      AllOption:
-      - OptionsName: Wireless Fiber
-      - OptionsName: Wireless Fidelity
-      - OptionsName: Wireless Framework
-      - OptionsName: Wireless Functionality
-      Answer: Wireless Fidelity
-    - QuestionName: 'What is the main purpose of a QR code? '
-      AllOption:
-      - OptionsName: Encrypting data
-      - OptionsName: Quick Response
-      - OptionsName: 'Storing files '
-      - OptionsName: Quickly Retrieving Data
-      Answer: Quickly Retrieving Data
-    - QuestionName: 'Computers calculate numbers in what mode? '
-      AllOption:
-      - OptionsName: Decimal
-      - OptionsName: Octal
-      - OptionsName: Binary
-      - OptionsName: None of the above
-      Answer: Binary
-    - QuestionName: 'Which of the following is not a programming language? '
-      AllOption:
-      - OptionsName: C
-      - OptionsName: Java
-      - OptionsName: Turing
-      - OptionsName: C#
-      Answer: Turing
-    - QuestionName: What is used to convert electrical energy to sound energy?
-      AllOption:
-      - OptionsName: Loud speaker
-      - OptionsName: Microphone
-      - OptionsName: Radio transmitter
-      - OptionsName: Radio receiver
-      Answer: Loud speaker
-    - QuestionName: 'Which company produces the popular video game console, PlayStation? '
-      AllOption:
-      - OptionsName: Nintendo
-      - OptionsName: Microsoft
-      - OptionsName: Sony
-      - OptionsName: Sega
-      Answer: Sony
-    - QuestionName: 'Which is not an internet protocol? '
-      AllOption:
-      - OptionsName: HTTP
-      - OptionsName: FTP
-      - OptionsName: STP
-      - OptionsName: IP
-      Answer: STP
-    - QuestionName: 'What is the primary function of a firewall in network security?  '
-      AllOption:
-      - OptionsName: Virus scanning
-      - OptionsName: Intrusion detection
-      - OptionsName: Data encryption
-      - OptionsName: To block unauthorized access
-      Answer: To block unauthorized access
-    - QuestionName: Which of the Following type of plastic ?
-      AllOption:
-      - OptionsName: Polyesther
-      - OptionsName: Thermoset
-      - OptionsName: Polyplastic
-      - OptionsName: Latex
-      Answer: Thermoset
-    - QuestionName: Natural rubber is made from a milky liquid called
-      AllOption:
-      - OptionsName: Plasticine
-      - OptionsName: Solution
-      - OptionsName: Electrolyte
-      - OptionsName: Latex
-      Answer: Latex
-    - QuestionName: The two types of electrical currents are
-      AllOption:
-      - OptionsName: Direct and Alternating
-      - OptionsName: Natural and Artificial
-      - OptionsName: Hydro and Coal
-      - OptionsName: Direct and Indirect
-      Answer: Direct and Alternating
+      - OptionsName: Polystyrene
+      - OptionsName: Polythene
+      - OptionsName: Nylon
+      - OptionsName: Teri cot
+      Answer: Polystyrene
   - CatName: Indian Culture
     AllQuestion:
     - QuestionName: ' ''Dandia'' is a popular dance of'
@@ -7584,434 +7758,6 @@ MonoBehaviour:
       - OptionsName: Iqbal
       - OptionsName: Jai Shankar Prasad
       Answer: Bankim Chandra Chatterji
-  - CatName: GK
-    AllQuestion:
-    - QuestionName: 'How many players are there in a cricket team?  '
-      AllOption:
-      - OptionsName: 5
-      - OptionsName: 9
-      - OptionsName: 15
-      - OptionsName: 11
-      Answer: 11
-    - QuestionName: 'Who is the Father of our Nation?  '
-      AllOption:
-      - OptionsName: Mahatma Gandhi
-      - OptionsName: Narerndra Modi
-      - OptionsName: APJ Abdul Kalam
-      - OptionsName: Dr. Rajendra Prasad
-      Answer: Mahatma Gandhi
-    - QuestionName: 'How many letters are there in the English alphabet?  '
-      AllOption:
-      - OptionsName: 22 letters
-      - OptionsName: 26 letters
-      - OptionsName: 36 letters
-      - OptionsName: 28 letters
-      Answer: 26 letters
-    - QuestionName: Which is Capital of India?
-      AllOption:
-      - OptionsName: New Delhi
-      - OptionsName: Mumbai
-      - OptionsName: Bengaluru
-      - OptionsName: Surat
-      Answer: New Delhi
-    - QuestionName: "How many colours are there in India\u2019s National Flag? "
-      AllOption:
-      - OptionsName: Three
-      - OptionsName: One
-      - OptionsName: Four
-      - OptionsName: Five
-      Answer: 
-    - QuestionName: 'What is the tallest mountain in the world?  '
-      AllOption:
-      - OptionsName: Himalaya
-      - OptionsName: Mount Everest
-      - OptionsName: Kangchenjunga
-      - OptionsName: Annapurna
-      Answer: Mount Everest
-    - QuestionName: '1 MB is equal to?  '
-      AllOption:
-      - OptionsName: 1200
-      - OptionsName: 1024
-      - OptionsName: 1000
-      - OptionsName: 1044
-      Answer: 
-    - QuestionName: 'Who was the first person to walk on the moon?  '
-      AllOption:
-      - OptionsName: Neil Armstrong
-      - OptionsName: Buzz Aldrin
-      - OptionsName: Yuri Gagarin
-      - OptionsName: Alan Shepard
-      Answer: Neil Armstrong
-    - QuestionName: National Tree of India is?
-      AllOption:
-      - OptionsName: Sherman Tree
-      - OptionsName: Coconut Tree
-      - OptionsName: Banyan tree
-      - OptionsName: Mango Tree
-      Answer: 
-    - QuestionName: 'Which is largest desert in the world?  '
-      AllOption:
-      - OptionsName: KALAHARI
-      - OptionsName: GOBI
-      - OptionsName: TAKLAMAKAN
-      - OptionsName: SAHARA
-      Answer: SAHARA
-    - QuestionName: 'In which direction does the sun rise? '
-      AllOption:
-      - OptionsName: North
-      - OptionsName: South
-      - OptionsName: East
-      - OptionsName: None Of These
-      Answer: East
-    - QuestionName: Which jungle is the Largest in the world?
-      AllOption:
-      - OptionsName: Amazon Forest
-      - OptionsName: Sahara
-      - OptionsName: Western Forest
-      - OptionsName: Atlantic Forest
-      Answer: Amazon Forest
-    - QuestionName: A figure with 8 sides is called?
-      AllOption:
-      - OptionsName: Octagon
-      - OptionsName: Hexagon
-      - OptionsName: Peltagon
-      - OptionsName: Nopalton
-      Answer: Octagon
-    - QuestionName: 'Who is the founder of Microsoft?  '
-      AllOption:
-      - OptionsName: Mark Zuckerbug
-      - OptionsName: Mukesh Ambani
-      - OptionsName: Bill Gates
-      - OptionsName: Salman Khan
-      Answer: Bill Gates
-    - QuestionName: Highest dam of India is?
-      AllOption:
-      - OptionsName: Hirakud Dam
-      - OptionsName: Bhakhra Dam
-      - OptionsName: Sardar Sarovar Dam
-      - OptionsName: Tehri Dam
-      Answer: 
-  - CatName: Animals
-    AllQuestion:
-    - QuestionName: 'What is the fastest land animal? '
-      AllOption:
-      - OptionsName: Lion
-      - OptionsName: Cheetah
-      - OptionsName: Ostrich
-      - OptionsName: Tiger
-      Answer: Cheetah
-    - QuestionName: Which land animal has the biggest eyes?
-      AllOption:
-      - OptionsName: Elephant
-      - OptionsName: Lion
-      - OptionsName: Horse
-      - OptionsName: Ostrich
-      Answer: Ostrich
-    - QuestionName: 'What is the national bird of India?  '
-      AllOption:
-      - OptionsName: Peacock
-      - OptionsName: Kangaroo
-      - OptionsName: Lion
-      - OptionsName: Tiger
-      Answer: 
-    - QuestionName: 'Which animal can clean its ears with its 18-inch-long tongue?  '
-      AllOption:
-      - OptionsName: crocodile
-      - OptionsName: giraffe
-      - OptionsName: zebra
-      - OptionsName: kangaroo
-      Answer: giraffe
-    - QuestionName: "What\u2019s the name of the largest snake in the world? "
-      AllOption:
-      - OptionsName: Cold-blooded
-      - OptionsName: Chameleon
-      - OptionsName: snout
-      - OptionsName: Anaconda
-      Answer: Anaconda
-    - QuestionName: "What animal is known to be \"man\u2019s best friend\"? "
-      AllOption:
-      - OptionsName: Dog
-      - OptionsName: Panda
-      - OptionsName: Kangaroo
-      - OptionsName: Horse
-      Answer: Dog
-    - QuestionName: 'How many legs are there in a mosquito?  '
-      AllOption:
-      - OptionsName: Four
-      - OptionsName: Ten
-      - OptionsName: Six
-      - OptionsName: Five
-      Answer: Six
-    - QuestionName: 'What is the tallest bird in the world? '
-      AllOption:
-      - OptionsName: Penguins
-      - OptionsName: Pelicans
-      - OptionsName: Swans
-      - OptionsName: Ostrich
-      Answer: Ostrich
-    - QuestionName: 'Which bird is known to be the fastest bird? '
-      AllOption:
-      - OptionsName: Lion
-      - OptionsName: Pigeon
-      - OptionsName: Falcon
-      - OptionsName: Crow
-      Answer: Falcon
-    - QuestionName: 'Which insect can lift up to 50 times its body weight? '
-      AllOption:
-      - OptionsName: Ant
-      - OptionsName: Elephant
-      - OptionsName: Horse
-      - OptionsName: Leopard
-      Answer: Ant
-    - QuestionName: 'How many stomachs do cows have?  '
-      AllOption:
-      - OptionsName: Three
-      - OptionsName: Five
-      - OptionsName: Four
-      - OptionsName: Ten
-      Answer: Four
-    - QuestionName: 'What bird can rotate its head up to 270 degrees? '
-      AllOption:
-      - OptionsName: Peacock
-      - OptionsName: Parrot
-      - OptionsName: Owl
-      - OptionsName: Pegions
-      Answer: Owl
-    - QuestionName: "What are the only mammals that can\u2019t jump?  "
-      AllOption:
-      - OptionsName: Lion
-      - OptionsName: Hippopotamus
-      - OptionsName: Flamingo
-      - OptionsName: Elephants
-      Answer: Elephants
-    - QuestionName: 'What creature can make a sound louder than a jet engine? '
-      AllOption:
-      - OptionsName: Tiger
-      - OptionsName: Blue Whale
-      - OptionsName: Elephant
-      - OptionsName: Leopard
-      Answer: Blue Whale
-    - QuestionName: 'What is the fastest water animal?  '
-      AllOption:
-      - OptionsName: Porpoise
-      - OptionsName: Tuna
-      - OptionsName: Flying fish
-      - OptionsName: Sailfish
-      Answer: Sailfish
-  - CatName: Geography
-    AllQuestion:
-    - QuestionName: 'Which country is Taj Mahal in?  '
-      AllOption:
-      - OptionsName: India
-      - OptionsName: Australia
-      - OptionsName: Spain
-      - OptionsName: Europe
-      Answer: India
-    - QuestionName: "In which city is the world\u2019s tallest building located? "
-      AllOption:
-      - OptionsName: Pakistan
-      - OptionsName: Canada
-      - OptionsName: Japan
-      - OptionsName: Dubai
-      Answer: Dubai
-    - QuestionName: How many spokes in ashok chakra
-      AllOption:
-      - OptionsName: 20
-      - OptionsName: 24
-      - OptionsName: 22
-      - OptionsName: 26
-      Answer: 24
-    - QuestionName: 'Which is the coldest place on Earth?  '
-      AllOption:
-      - OptionsName: India
-      - OptionsName: Japan
-      - OptionsName: Antarctica
-      - OptionsName: USA
-      Answer: Antarctica
-    - QuestionName: 'In which country is the Great Pyramid of Giza located? '
-      AllOption:
-      - OptionsName: Egypt
-      - OptionsName: Canada
-      - OptionsName: Pakistan
-      - OptionsName: Russia
-      Answer: Egypt
-    - QuestionName: 'Which city in India is called the Pink City?  '
-      AllOption:
-      - OptionsName: Mumbai
-      - OptionsName: Delhi
-      - OptionsName: Bengaluru
-      - OptionsName: Jaipur
-      Answer: Jaipur
-    - QuestionName: 'What is the largest ocean in the world? '
-      AllOption:
-      - OptionsName: Arctic Ocean
-      - OptionsName: Antlantic Ocean
-      - OptionsName: Pacific Ocean
-      - OptionsName: None Of These
-      Answer: Pacific Ocean
-    - QuestionName: "What is India\u2019s official language?  "
-      AllOption:
-      - OptionsName: Punjabi
-      - OptionsName: Hindi
-      - OptionsName: English
-      - OptionsName: Gujarati
-      Answer: Hindi
-    - QuestionName: What is the capital of England?
-      AllOption:
-      - OptionsName: Africa
-      - OptionsName: London
-      - OptionsName: Ottawa
-      - OptionsName: San Francisco
-      Answer: London
-    - QuestionName: 'What is the capital city of America?  '
-      AllOption:
-      - OptionsName: Jakarta
-      - OptionsName: San Fransinco
-      - OptionsName: Washington, D.C
-      - OptionsName: New York
-      Answer: Washington, D.C
-    - QuestionName: "How much of the Earth\u2019s surface is covered by the ocean?"
-      AllOption:
-      - OptionsName: 10
-      - OptionsName: 90
-      - OptionsName: 30
-      - OptionsName: 70
-      Answer: 70
-    - QuestionName: What is the capital of Canada?
-      AllOption:
-      - OptionsName: Edmonton
-      - OptionsName: Montreal
-      - OptionsName: Ottawa
-      - OptionsName: Calgary
-      Answer: Ottawa
-    - QuestionName: 'Which is the longest river in the world?  '
-      AllOption:
-      - OptionsName: Mississippi River
-      - OptionsName: Yellow River
-      - OptionsName: The Nile River
-      - OptionsName: None of these
-      Answer: The Nile River
-    - QuestionName: 'What is the hottest continent on Earth? '
-      AllOption:
-      - OptionsName: Africa
-      - OptionsName: Asia
-      - OptionsName: Turkey
-      - OptionsName: USA
-      Answer: 
-    - QuestionName: 'Which country is called the Land of Rising Sun? '
-      AllOption:
-      - OptionsName: Japan
-      - OptionsName: Brazil
-      - OptionsName: China
-      - OptionsName: German
-      Answer: Japan
-  - CatName: Logical
-    AllQuestion:
-    - QuestionName: 
-      AllOption:
-      - OptionsName: 
-      - OptionsName: 
-      - OptionsName: 
-      - OptionsName: 
-      Answer: 
-    - QuestionName: What is the square root of 144?
-      AllOption:
-      - OptionsName: 14
-      - OptionsName: 12
-      - OptionsName: 16
-      - OptionsName: 10
-      Answer: 12
-    - QuestionName: 
-      AllOption:
-      - OptionsName: 
-      - OptionsName: 
-      - OptionsName: 
-      - OptionsName: 
-      Answer: 
-    - QuestionName: What is the smallest prime number greater than 10?
-      AllOption:
-      - OptionsName: 11
-      - OptionsName: 12
-      - OptionsName: 13
-      - OptionsName: 14
-      Answer: 
-    - QuestionName: 'What is taken before you can get it? '
-      AllOption:
-      - OptionsName: Price
-      - OptionsName: Picture
-      - OptionsName: Gift
-      - OptionsName: None Of These
-      Answer: Picture
-    - QuestionName: How long is the answer to this question?
-      AllOption:
-      - OptionsName: Answer
-      - OptionsName: How long
-      - OptionsName: Very Lon
-      - OptionsName: Short
-      Answer: How long
-    - QuestionName: You are my Brother But I am not your Brother Who I Am?
-      AllOption:
-      - OptionsName: Brother
-      - OptionsName: Father
-      - OptionsName: Sister
-      - OptionsName: Mother
-      Answer: Sister
-    - QuestionName: 
-      AllOption:
-      - OptionsName: 
-      - OptionsName: 
-      - OptionsName: 
-      - OptionsName: 
-      Answer: 
-    - QuestionName: Tomorrow's yesterday. Yesterday's tomorrow. What is it?
-      AllOption:
-      - OptionsName: Today
-      - OptionsName: Yesterday
-      - OptionsName: Tomorrow
-      - OptionsName: None Of These
-      Answer: Today
-    - QuestionName: 
-      AllOption:
-      - OptionsName: 
-      - OptionsName: 
-      - OptionsName: 
-      - OptionsName: 
-      Answer: 
-    - QuestionName: What is the largest planet in our solar system?
-      AllOption:
-      - OptionsName: Earth
-      - OptionsName: Mars
-      - OptionsName: Jupiter
-      - OptionsName: Saturn
-      Answer: Jupiter
-    - QuestionName: 
-      AllOption:
-      - OptionsName: 
-      - OptionsName: 
-      - OptionsName: 
-      - OptionsName: 
-      Answer: 
-    - QuestionName: 'Which planet is known as the "Red Planet"? '
-      AllOption:
-      - OptionsName: Earth
-      - OptionsName: Venus
-      - OptionsName: Mars
-      - OptionsName: Jupiter
-      Answer: Mars
-    - QuestionName: 
-      AllOption:
-      - OptionsName: 
-      - OptionsName: 
-      - OptionsName: 
-      - OptionsName: 
-      Answer: 
-    - QuestionName: What can you keep after giving it to someone?
-      AllOption:
-      - OptionsName: Nothing
-      - OptionsName: Wishes
-      - OptionsName: Money
-      - OptionsName: Your word
-      Answer: Your word
   QuestionTxt: {fileID: 908849438}
   AllOptText:
   - {fileID: 1160065377}
@@ -8054,10 +7800,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1404958621}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.314209, y: -2.628296}
-  m_SizeDelta: {x: -44.6808, y: -26.283}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000030517578, y: 0}
+  m_SizeDelta: {x: 612.6371, y: 132.8333}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1160065377
 MonoBehaviour:
@@ -8106,7 +7852,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 62.8
+  m_fontSize: 54.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8669,10 +8415,10 @@ RectTransform:
   - {fileID: 1093091566}
   m_Father: {fileID: 1871818339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1560, y: -100}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1325056826
 MonoBehaviour:
@@ -9285,8 +9031,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 120}
-  m_SizeDelta: {x: 750, y: 160}
+  m_AnchoredPosition: {x: 9, y: 76}
+  m_SizeDelta: {x: 680, y: 170}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1404958622
 MonoBehaviour:
@@ -9418,8 +9164,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 120}
-  m_SizeDelta: {x: 750, y: 160}
+  m_AnchoredPosition: {x: 72.31714, y: 88}
+  m_SizeDelta: {x: 680, y: 170}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1455468501
 MonoBehaviour:
@@ -9658,8 +9404,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -120}
-  m_SizeDelta: {x: 750, y: 160}
+  m_AnchoredPosition: {x: 72.31714, y: -160.32825}
+  m_SizeDelta: {x: 680, y: 170}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1513077072
 MonoBehaviour:
@@ -9789,7 +9535,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.7878418, y: 3.5807953}
+  m_AnchoredPosition: {x: 2.7878418, y: 3.5808105}
   m_SizeDelta: {x: -45.1919, y: -27.2113}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1542813649
@@ -10156,7 +9902,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TECHNOLOGY
+  m_text: GEOGRAPHY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -10900,9 +10646,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'ECONOMICS
-
-'
+  m_text: LOGICAL
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -11173,10 +10917,10 @@ RectTransform:
   - {fileID: 1821712478}
   m_Father: {fileID: 1871818339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 360, y: -330}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1936872050
 MonoBehaviour:
@@ -11698,10 +11442,10 @@ RectTransform:
   - {fileID: 191842647}
   m_Father: {fileID: 1871818339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1560, y: -560}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1998526890
 MonoBehaviour:
@@ -12098,10 +11842,10 @@ RectTransform:
   - {fileID: 416424282}
   m_Father: {fileID: 1871818339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 2160, y: -100}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2079764656
 MonoBehaviour:
@@ -12388,7 +12132,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ANIMALS
+  m_text: ECONOMICS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -12587,5 +12331,3 @@ SceneRoots:
   - {fileID: 1385599211}
   - {fileID: 498029938}
   - {fileID: 1151486119}
-  - {fileID: 1119818409}
-  - {fileID: 97405439}
