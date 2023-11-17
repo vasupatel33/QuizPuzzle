@@ -30,7 +30,6 @@ public class GameManager : Singleton<GameManager>
 
     public static GameManager instance;
     bool isSlider;
-    //int questionNo;
     int ScoreValue=0,HighScoreValue;
     int scorePlayerPrefs;
     private void Start()
@@ -41,25 +40,10 @@ public class GameManager : Singleton<GameManager>
         {
             Debug.Log("If workss");
             GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.GetComponent<SpriteRenderer>().color = Color.black;
-
         }
         int value = PlayerPrefs.GetInt("HighScore");
         HighScoreText.text = value.ToString();
         
-        //for(int i = 0; i < AllCat.Length; i++)
-        //{
-        //    Debug.Log(AllCat[i].CatName);
-        //    for(int j = 0; j < AllCat[i].AllQuestion.Length; j++)
-        //    {
-        //        Debug.Log(AllCat[i].AllQuestion[j].QuestionName);
-        //        Debug.Log(AllCat[i].AllQuestion[j].Answer);
-        //        for(int k = 0; k < AllCat[i].AllQuestion[j].AllOption.Length; k++)
-        //        {
-        //            Debug.Log(AllCat[i].AllQuestion[j].AllOption[k].OptionsName);
-        //        }
-        //    }
-
-        //}
         HighScoreText.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
         MusicSet();
         SoundSet();
@@ -72,7 +56,6 @@ public class GameManager : Singleton<GameManager>
         {
             CatButton[i].interactable = true;
             Debug.Log("Button Unlocked = " + CatButton[i]);
-            //PlayerPrefs.SetInt("CatPref", selectedCategory);
         }
     }
     private void Update()
@@ -96,13 +79,8 @@ public class GameManager : Singleton<GameManager>
         gameOverPanel.SetActive(false);
         secondPanel.SetActive(false);
         firstPanel.SetActive(true);
-        //PlayerPrefs.SetInt("LifePref", 3);
         PlayerPrefs.SetInt("Score", scorePlayerPrefs);
         QuestionUnlock();
-        //index = 3;
-        //PlayerPrefs.GetInt("CatPref");
-        //isSlider = true;
-        //QuestionSet();
     }
     public void QuestionSet()
     {
@@ -162,7 +140,6 @@ public class GameManager : Singleton<GameManager>
         }
         else
         {
-          
             StartCoroutine(LifeBarHealthClose());
         }
     }
@@ -181,12 +158,11 @@ public class GameManager : Singleton<GameManager>
         }
         else
         {
-            //Debug.Log("Else calleedd");
             vall = 1;
         }
         yield return new WaitForSeconds(0.5f);
 
-        Debug.Log("Index = "+index);//2
+        Debug.Log("Index = "+index);
         if (index == 0)
         {
             Debug.Log("Befor val = " + ScoreValue);
@@ -207,7 +183,6 @@ public class GameManager : Singleton<GameManager>
             BackgroundClickRemoveImage.SetActive(true);
             SliderImage.fillAmount = 0;
             isSlider = false;
-            // index = 3;
         }
     }
     public void RewardMethodForGiveLife()
@@ -221,14 +196,8 @@ public class GameManager : Singleton<GameManager>
         firstPanel.SetActive(true);
         isSlider = false;
         BackgroundClickRemoveImage.SetActive(false);
-        //PlayerPrefs.GetInt("CatPref");
         QuestionUnlock();
         GoogleMobileAdsController.Instance.ShowRewardAdd();
-        if (quesUnlock)
-        {
-            //GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.GetComponent<SpriteRenderer>().color = Color.black;
-            //GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.SetActive(false);
-        }
     }
     public void BackBtnGameOverPanel()
     {
@@ -266,7 +235,6 @@ public class GameManager : Singleton<GameManager>
     public void BackBtnSecondPanel()
     {
         Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
-        //PlayerPrefs.GetInt("CatPref");
         QuestionUnlock();
         
         Debug.Log("Category = "+selectedCategory);
@@ -280,7 +248,6 @@ public class GameManager : Singleton<GameManager>
     {
         HighScoreValue = PlayerPrefs.GetInt("HighScore");
         Debug.Log("Start High Score = "+HighScoreValue);
-        //BannerViewController.Instance.DestroyAd();
         Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().PlayOneShot(ClickSound);
         selectedField = category;
         selectedCategory = category;
@@ -288,7 +255,6 @@ public class GameManager : Singleton<GameManager>
         StartCoroutine(SecondPanelWait());
         CatHeadingText.text = AllCat[selectedField].CatName;
         QuestionSet();
-
     }
     IEnumerator SecondPanelWait()
     {
@@ -307,18 +273,6 @@ public class GameManager : Singleton<GameManager>
             secondPanel.SetActive(false);
             firstPanel.SetActive(true);
             isSlider = false;
-            
-            //for (int i = 0; i <= LifeCount; i++)
-            //{
-            //    Debug.Log("LifeCoubt close in loop = " + LifeCount);
-            //    LifeBarObject[i].SetActive(false);
-            //}
-            //if (quesUnlock)
-            //{
-            //    GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.GetComponent<SpriteRenderer>().color = Color.black;
-            //    //GameObject.FindWithTag("Content").gameObject.transform.GetChild(selectedCategory - 1).gameObject.SetActive(false);
-            //    PlayerPrefs.GetInt("CatPref",selectedField);
-            //}
         }
         
     }
@@ -377,7 +331,6 @@ public class GameManager : Singleton<GameManager>
         {
             Common.Instance.gameObject.transform.GetChild(1).GetComponent<AudioSource>().mute = false;
             SoundBtn.GetComponent<Image>().sprite = SoundOnImg;
-
         }
     }
 }
